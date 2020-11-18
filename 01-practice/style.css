@@ -193,3 +193,35 @@ footer img {
     width: 60px;
     cursor: pointer;
 }
+
+/* --------------GALLERY PAGE------------ */
+main {
+    display: grid;
+}
+.gallery-wrapper {
+    width: 95%;
+    margin: 2% auto;
+
+}
+
+.gallery-wrapper img {
+    width: 100%;
+    margin: 1% auto;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 1000px) {
+    .gallery-wrapper {
+        width: 95%;
+        margin: 2% auto;
+     }
+    
+    .gallery-wrapper img {
+        width: 32%;
+        height: 350px;
+        margin: .5% .5%;
+        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+        gap: 9px;
+        border-radius: 10px;
+    }
+}
