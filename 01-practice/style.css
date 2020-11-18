@@ -1,0 +1,27 @@
+/* -------- basic settings ---------- */
+:root {
+    --padding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* --------- container ---------- */
+
+
+
+/* ---------- header ----------- */
+
+header {
+    background-color: greenyellow;
+    min-height: 100px;
+    padding: var(--padding);
+}
