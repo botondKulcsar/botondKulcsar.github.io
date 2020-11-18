@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Pacifico&display=swap');
+
+html,*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background:
+    #ac754c;
+}
+/**********HEADER**************/
+
+header{
+    background: #5a95b3;
+    height: 150px;
+    width: 100%;
+}
+.home{
+    color:#ddb695;
+    font-size: 3rem;
+    text-align: center;
+    /* border:1px solid red; */
+    width:300px;
+    font-family: pacifico;
+    font-weight: 300;
+    margin: 0 auto;
+
+    
+
+}
+.link{
+    color:#714423;
+    font-size: 2rem;
+    text-align: end;
+    padding-right: 30px;
+}
+.link a{
+    margin-top:80px;
+    text-decoration: none;
+    background:#b2c8df;
+    border-radius: 2%;
+    padding:1rem;
+   
+}
+
+/**************-MAIN*****************/
+
+
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: minmax(150px,auto);
+    }
+    
+
+.bemutatkozas{
+    background:#ddb695;
+    /* height:150px; */
+    width:95%;
+    margin:0 auto ;
+    border-radius: 5%;
+}
+h3{
+    padding-top: 20px;
+    padding-left: 20px; 
+    font-family: catamaran;
+    font-size: 2rem;
+    
+}
+.bemutatkozas p{
+
+    padding-top: 20px;
+    padding-left: 20px; 
+    padding-bottom: 20px;
+    font-family: catamaran;
+    font-size: 1.5rem;
+}
+
+/*****************image *********/
+
+div.pic{
+    min-height: 150px;
+    width: 70%;
+    margin:2% auto;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background: #ddb695;
+    padding:5px;
+
+}
+
+img{
+
+    display: block;
+    max-width: 95%;
+    margin: 1% auto;
+    border-radius: 10px;
+}
+/************három tulajdonság***********/
+.container{
+    display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-gap:5px;
+    background: #ac754c;
+    /* border:2px solid green; */
+    width:70%;
+    height: auto;
+    margin: 10px auto;
+    display:grid;
+}
+
+.box{
+    /* border:1px solid orange; */
+    height: 100px;
+    background: #ddb695;
+    border-radius: 10px;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+div.box p{
+    font-family: pacifico;
+    color: #714423;
+    font-size: 2rem;
+    text-align: center;
+    padding-top:10px;
+}
+
+
+/*****************FOOTER************/
+
+footer{
+    width:100%;
+    height:150px;
+    background: #5a95b3;
+}
+footer span{
+    background: #b2c8df;
+    font-size: 1rem;
+    color: #ddb695;
+    font-family: catamaran;
+    font-weight: 300;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left:90%;
+    
+}
