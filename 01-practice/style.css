@@ -179,7 +179,14 @@ padding-right: 40px;} */
 
 /*......................About.....................*/
 
-
+.about-wrapper {
+    
+    margin: 25px auto;
+    max-width: 1000px;
+    height: 700px;
+    border-radius: 10px;
+    background: var(--honeydew);
+}
 
 
 /*................Laptop view.................*/
