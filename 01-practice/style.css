@@ -1,7 +1,19 @@
-body {
-    font-family: 'Xanh Mono', monospace;
+/* ---------------Body, HTML-------------------- */
+html, * {
+    box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Xanh Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+}
 
 /* ----------------Header-------------------- */
 
@@ -14,12 +26,15 @@ header {
     position: relative;
     font-size: 5vw;
     text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
     padding: 5px;  
 }
 
 a {
     text-decoration: none;
     font-size: 0.7em;
+    color: whitesmoke;
 }
 
 /* -------------------Main----------------------- */
@@ -33,18 +48,45 @@ main {
 .intro img {
     display: block;
     max-width: 95%;
-    margin: 1% auto;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 05, 0.5);
+    border-radius: 10px;
+    margin: 2% auto;
 }
 
 .quote {
     text-align: center;
     font-size: 3vw;
-    background-color: grey;
+    background-color: rgb(2, 102, 2);
+    color: whitesmoke;
     padding: 10px;
     max-width: 95%;
-    margin: 1% auto;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 05, 0.5);
+    border-radius: 10px;
+    margin: 2% auto;
+    display: block;
+}
+
+.properties {
+    display: block;
+    /* margin: 1% auto; */
+    margin: 2px, auto;
+}
+
+.properties div {
+    border: grey 1px solid;
+    padding: 5px;
+    font-size: 3vw;
+    margin: 5px;
+    /* max-width: 100%; */
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 05, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(2, 102, 2);
+    color: whitesmoke;
+
 }
 /* ---------------Footer----------------- */
+
 footer {
     width: 100%;
     min-height: 100px;
@@ -54,9 +96,12 @@ footer {
     padding: 5px;
     text-align: center;
     font-size: 3vw;
+    color: whitesmoke;
 }
 
 footer a {
     display: inline-block;
     padding: 5px;
+    color: whitesmoke;
+    font-size: 3vw;
 }
