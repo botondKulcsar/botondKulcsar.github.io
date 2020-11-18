@@ -1,6 +1,6 @@
 :root{
 
-    --shadow: 1px 4px 8px 15px rgba(0, 0, 0, 0.5);
+    --shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0.5);
     --first-background-color: lightblue ; 
     --second-background-color:rgb(133, 181, 197);
     --button-color:  #44AF69 ;
@@ -47,6 +47,7 @@ html, * {
 body {
     margin: 0;
     padding: 0;
+    background: rgb(197, 222, 245);
 }
 
 /*--------Header & Footer for all files---------*/
@@ -68,7 +69,6 @@ header nav {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 footer {
     min-height: 100px;
@@ -102,7 +102,6 @@ footer a {
     margin: 2px auto;
     width: 95%;
 
-
 }
 
 .about-article h1 {
@@ -110,6 +109,105 @@ footer a {
     font-size: 2vw;
 }
 
+/*--------Gallery.html---------*/
+.main-gallery {
+    margin: 5px auto;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-pic{
+    width: 100%;
+    background: var(--first-background-color);
+
+
+}
+
+.gallery-pic img {
+    
+    width: 95%;
+    padding: 2%;
+    text-align: center;
+    box-shadow: var(--shadow);
+
+}
+
+/*--------Works.html---------*/
+
+.works-topics{
+    width: 100%;
+    background: var(--first-background-color);
+    text-align: center;
+
+
+}
+
+.work-text {
+    font-size: 2vw;
+}
+
+.works-topics img {
+    
+    width: 95%;
+    padding: 2%;
+    text-align: center;
+    box-shadow: var(--shadow);
+
+}
+
+/*--------Home.html---------*/
+
+.home-text {
+
+    text-align: center;
+    font-size: 2vw;
+    padding: 5%;
+
+
+}
+.home-text1 {
+
+    text-align: center;
+    font-size: 2vw;
+    padding: 5%;
+
+
+}
+.home-bigpic{
+    width: 100%;
+    background: var(--first-background-color);
+    text-align: center;
+
+
+}
+
+.home-divs img {
+    width: 95%;
+    padding: 2%;
+    text-align: center;
+    box-shadow: var(--shadow);
+
+}
+
+.home-buttons {
+    width: 80%;
+    margin: 5% auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 40px;
+    grid-template-rows: minmax(100px, auto);
+    
+}
+
+.home-buttons div {
+    background: linear-gradient(45deg, lightblue,blue);
+    border: darkblue 4px solid;
+    border-radius: 10px;
+}
+
+/*--------MEDIA-Tablet--------*/
 
 @media only screen and (min-width: 750px) {
 
@@ -121,6 +219,7 @@ footer a {
         transform: translate(-2%, -2%);
         background: rgba(255,255,255,0.5);
         text-align: center;
+        font-size: 2vw;
     }
 
     
@@ -133,6 +232,8 @@ footer a {
         float: left;
         width: 49%;
         height: 100%;
+        font-size: 1.4vw;
+        padding: 5px;
         
     }
 
@@ -149,8 +250,64 @@ footer a {
         margin: 0 auto;
         padding: 10px;
     }
+
+    .main-gallery {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-gap: 5px;
+        grid-template-rows: minmax(100px, auto);
+    }
+
+
+
+
+    .works-topics img {
+        width: 49%;
+        float: left;
+        height: 100%;
+    }
+    
+    .work-text{
+        float: right;
+        width: 49%;
+        font-size: 1.4vw;
+        padding: 5px;
+        
+    }
+
+    .works-divs::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .home-bigpic img {
+        width: 49%;
+        float: left;
+        height: 100%;
+    }
+    
+    .home-text{
+        float: right;
+        width: 49%;
+        font-size: 1.4vw;
+        padding: 5px;
+        
+    }
+
+    .home-divs::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+
+    footer {
+        font-size: 2vw;
+    }
 }
 
+/*--------MEDIA-Full--------*/
 
 @media only screen and (min-width: 1000px) {
 }
