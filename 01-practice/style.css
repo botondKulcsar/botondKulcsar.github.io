@@ -224,6 +224,57 @@ background: linear-gradient(90deg, rgba(48,11,77,1) 0%, rgba(10,46,71,1) 0%, rgb
 
 }
 
+/* ------------ about ---------------*/
+
+.about-main {
+    display: flex;
+    flex-direction: row;
+ 
+} 
+
+.left-main {
+    width: 30%;
+    max-width: 30%;
+    background: red;
+}
+
+
+
+.img-main {
+    width: 80%;
+    padding: 10%;
+    margin: 5% auto;
+    
+}
+
+.img-main img {
+    width: 100%;
+}
+
+
+.right-main {
+    width: 70%;
+    max-width: 70%;
+    padding: 5%;
+    
+}
+
+.text-main {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.dot-ul {
+    padding: 4%;
+} 
+
+.number-ul {
+    padding: 4%;
+}
+
+
+
+
 
 
 /* --------------------- Media Queries --------------------- */
