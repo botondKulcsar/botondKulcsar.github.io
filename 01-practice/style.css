@@ -78,8 +78,12 @@ padding-right: 40px;}
         border-radius: 10px;
         width: 80%;
         height: 300px;
+        justify-self: stretch;
     text-align: center;}
         
+
+    .prop p {margin:  2%;}
+    .prop h3 { text-decoration: underline;}
         
         
         /*...............Footer.....................*/
