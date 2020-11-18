@@ -1,0 +1,23 @@
+html,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*............színek.............*/
+: root { --purple: #331e36; /*dark-purple*/
+        --slate-blue:#41337a;
+        --superiority-blue: #6ea4bf;
+        --powder-blue: #c2efeb;
+        --honeydew: #ecfee8;
+}
+
+
