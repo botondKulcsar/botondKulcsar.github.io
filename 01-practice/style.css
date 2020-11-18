@@ -16,7 +16,12 @@ body {
 
 /* --------- container ---------- */
 
-
+.container {
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
 /* ---------- header ----------- */
 
