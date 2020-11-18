@@ -3,46 +3,124 @@
     Mit csináltam eddig, mik az erősségeim, mi a hobbim, milyen nyelveket beszélek. 
     Használd a megfelelő HTML elemeket a felsorolásokhoz, legyen benne számmal, 
     ponttal való felsorolás is.  -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>About</title>
+    <meta name="title" content="Home page">
+    <meta name="description" content="fotós szolgáltatás budapesten">
+    <meta name="keywords" content="budapest, fotó, portrait, picture">
+    <meta name="robots" content="index/follow">
+    <meta property="og:title" content="Emily Photography">
+    <meta property="og:description" content="professional photographer budapest">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/flagged/photo-1551592398-c320012bc1c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+    <meta property="og:url" content="emilyinbudapest.hu">
+    <meta property="og:site_name" content="emily Photography">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <title>Emily Photography</title>
 </head>
 
 <body>
 
     <header>
         <nav>
-            <p>About</p>
-            <p>
-                <a href="home.html">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="works.html">Works</a>
+            <p id="main">
+            <h1>About</h1>
+            </p>
+            <p id="first">
+                <a id="about" href="home.html">Home</a>
+            </p>
+            <p id="second">
+                <a id="gallery" href="gallery.html">Gallery</a>
+            </p>
+            <p id="third">
+                <a id="works" href="works.html">Works</a>
             </p>
         </nav>
     </header>
-<footer>
-    <section class="contact-me">
-        <fieldset>
-            <label for="fieldset"><h3>Contact me</h3></label>
-            <form action="mailto: mail@mail.com" method="POST" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" name="name">
 
-                <label for="email">E-mail:</label>
-                <input type="email" name="email">
+    <main>
 
-                <label for="message">Your message:</label>
-                <input type="text-area" name="message">
-            </form>
-        </fieldset>
-    </section>
-</footer>
+        <section class="personal">
+            <div class="name-wrapper">
+                <h2> Hi, I'am Emily 🖐🏻️</h2>
+            </div>
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80"
+                    alt="emberkénk képe">
+            </div>
+            <div class="personal-content">
+                <section>
+                    <strong>Who am i?</strong>
+                    <p> 'Content here, content here', making it look like readable English. Many desktop publishing
+                        packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+                        'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                </section>
+                <section>
+                    <strong>My road:</strong>
+                    <p>It is a long established fact that a reader will be The point of using Lorem Ipsum is that it has
+                        a more-or-ldistracted by the readable content of a page when looking at its layout. </p>
+                    <p> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here, content here', making it look like readable English. <br> Many
+                        desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                        text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                </section>
+                <div class="list-wrapper">
+                    <section>
+                        <strong>What can you choose?</strong>
+                        <ul>
+                            <li>Studio </li>
+                            <li>Hire me for events</li>
+                            <li>Outdoor</li>
+                            <li>Family projects</li>
+                            <li>Private shooting</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <strong>To do List:</strong>
+                        <ol>
+                            <li>Choose a type of shooting</li>
+                            <li>Choose extras (hair, makeup, stylist service)</li>
+                            <li>Book a date</li>
+                            <li>Arrive on time</li>
+                            <li>Have fun</li>
+                        </ol>
+                    </section>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="contact-me">
+            <fieldset>
+                <label for="fieldset">
+                    <h3>Have any questions?</h3>
+                </label>
+                <form action="mailto: mail@mail.com" method="POST" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email">
+
+                    <label for="message">Your message:</label>
+                    <input type="text-area" name="message">
+                </form>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <div class="btn-wrapper">
+            <a href="about.html" class="btn">Up🔺</a>
+        </div>
+    </footer>
 </body>
 
 </html>
