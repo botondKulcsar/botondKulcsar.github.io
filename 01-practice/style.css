@@ -24,6 +24,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
     height: 80px;
     background: #001A23;
     color: whitesmoke;
@@ -176,3 +177,19 @@ textarea {
 }
 
 /* --------------FOOTER------------ */
+
+footer {
+    width: 100vw;
+    height: 80px;
+    background-color: #001A23;
+    position: relative;
+}
+
+footer img {
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    transform: translate(-10%);
+    width: 60px;
+    cursor: pointer;
+}
