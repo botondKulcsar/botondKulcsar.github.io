@@ -23,6 +23,7 @@ body {
     font-size: 1.1em;
 }
 
+
 /********** ALL SITE: Header, Footer **********/
 header {
     width: 100%;
@@ -56,6 +57,10 @@ main {
     padding: 1%;
 }
 
+h1, h2, h3 {
+    color: var(--darkblue);
+}
+
 footer {
     width: 100%;
     min-height: 60px;
@@ -85,15 +90,11 @@ footer p {
     padding: 2%;
 }
 
+
 /********** HOME **********/
 h1 {
     margin-top: 0;
     padding-top: 20px;
-    color: var(--darkblue);
-}
-
-h2 {
-    color: var(--darkblue);
 }
 
 .image--right {
@@ -126,7 +127,6 @@ h2 {
 }
 
 
-
 /********** WORKS **********/
 .work-main article {
     width: 100%;
@@ -157,6 +157,7 @@ h2 {
     text-align: center;
 }
 
+
 /********** GALLERY **********/
 .gallery-main {
     max-width: 900px;
@@ -175,10 +176,74 @@ h2 {
     margin: 1%;
     box-shadow: 1px 3px 5px black;
 }
+
+
 /********** ABOUT **********/
+.about-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-text-strength p{
+    display: inline-block;
+    margin: 1%;
+    padding: 2%;
+    background: var(--lightbrown);
+}
+
+.about-text-hobby ul {
+    list-style: none;
+}
+
+.about-text-hobby ul li::before {
+    content: "✿";
+    color: var(--darkblue);
+    font-weight: 800;
+    width: 1.1em;
+
+    display: inline-block;
+    margin-left: -1em;
+}
+
+.about-text-lang ol li {
+    list-style-type: upper-roman;
+}
+
+form {
+    width: 80%;
+    margin: 5% auto;
+}
+
+fieldset {
+    border: 5px solid var(--darkblue);
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset *:not(legend) {
+    line-height: 1em;
+    margin-top: 10px;
+}
+
+fieldset button {
+    line-height: 1.5em;
+    background: var(--lightblue);
+    border: 2px solid var(--darkblue);
+}
+
+fieldset button:hover {
+    background: var(--darkblue);
+    border: 2px solid var(--lightblue);
+}
+
 
 /********** Media Query **********/
 @media only screen and (min-width: 650px) {
+
     /********** HOME **********/
     .home-boxes {
         flex-direction: row;
@@ -192,6 +257,7 @@ h2 {
         text-align: center;
         background: var(--lightbrown);
     }
+
 
     /********** WORKS **********/
     .work-main article {
@@ -232,14 +298,49 @@ h2 {
         height: 150px;
         margin: 2%;;
     }
+
+
     /********** ABOUT **********/
+    .about-main {
+        display: flex;
+    }
+
+    .about-img {
+        flex: 35%;
+    }
+
+    .about-text {
+        flex: 65%
+    }
+
+    .about-img {
+        max-width: 300px;
+        max-height: 300px;
+        position: sticky;
+        top: 5px;
+    }
+    
+    .about-img img {
+        width: 100%;
+        border-radius: 50%;
+        padding: 5%;
+    }
+
+    fieldset {
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
+/* 
+@media only screen and (min-width: 1050px) {
+    /********** HOME **********/
 
-/********** HOME **********/
+    /********** WORKS **********/
 
-/********** WORKS **********/
+    /********** GALLERY **********/
 
-/********** GALLERY **********/
-
-/********** ABOUT **********/
+    /********** ABOUT **********/
+/* } */

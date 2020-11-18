@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style.css">
     <!--Use awesome icons-->
 
-	<script src="https://kit.fontawesome.com/23e4edfc57.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/23e4edfc57.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -39,26 +39,36 @@
     </header>
 
     <main>
-        <section class="abount-main">
+        <section class="about-main">
 
             <div class="about-img">
                 <img src="static/me.jpg" alt="">
             </div>
-    
-            <section class="abount-text">
-                <article>
+
+            <section class="about-text">
+                <article class="about-text-main">
                     <p>Donec vulputate arcu mi, a malesuada diam venenatis et. Nulla sagittis odio sit amet facilisis
                         consequat. Mauris placerat, arcu id imperdiet ornare, magna est euismod nibh, id efficitur nisi
-                        ipsum nec est. Curabitur faucibus, dui quis dictum lobortis, risus ante vulputate felis, nec dictum
-                        velit velit vel ipsum. Pellentesque quis ornare purus.</p>
+                        ipsum nec est. Curabitur faucibus, dui quis dictum lobortis, risus ante vulputate felis, nec
+                        dictum velit velit vel ipsum. Pellentesque quis ornare purus.</p>
+                    <p>Morbi sed rutrum purus. Pellentesque
+                        vulputate interdum neque, id ultricies velit pharetra vitae. In faucibus metus nec auctor
+                        scelerisque. Aliquam ornare dignissim nibh, iaculis dictum leo molestie vel. Orci varius natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eu molestie risus. Proin
+                        quis turpis urna. Aliquam rhoncus lacus vitae semper finibus. Nullam non lacinia ante.</p>
+                    <p>Morbi sed rutrum purus. Pellentesque
+                        vulputate interdum neque, id ultricies velit pharetra vitae. In faucibus metus nec auctor
+                        scelerisque. Aliquam ornare dignissim nibh, iaculis dictum leo molestie vel. Orci varius natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eu molestie risus. Proin
+                        quis turpis urna. Aliquam rhoncus lacus vitae semper finibus. Nullam non lacinia ante.</p>
                     <p>Morbi sed rutrum purus. Pellentesque
                         vulputate interdum neque, id ultricies velit pharetra vitae. In faucibus metus nec auctor
                         scelerisque. Aliquam ornare dignissim nibh, iaculis dictum leo molestie vel. Orci varius natoque
                         penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eu molestie risus. Proin
                         quis turpis urna. Aliquam rhoncus lacus vitae semper finibus. Nullam non lacinia ante.</p>
                 </article>
-                <article>
-                    <p>Strength</p>
+                <article class="about-text-strength">
+                    <h3>Strength</h3>
                     <p>creativity</p>
                     <p>energy</p>
                     <p>kindness</p>
@@ -66,22 +76,35 @@
                     <p>diligence</p>
                     <p>perfectionist</p>
                 </article>
-                <article>
-                    <p>Hobby</p>
+                <article class="about-text-hobby">
+                    <h3>Hobby</h3>
                     <ul>
                         <li>hiking with kids in mountains</li>
                         <li>gardening in every season</li>
                         <li>running</li>
                     </ul>
                 </article>
-                <article>
-                    <p>Language</p>
-                    <ul>
+                <article class="about-text-lang">
+                    <h3>Language</h3>
+                    <ol>
                         <li>Hungarian</li>
                         <li>English</li>
                         <li>German</li>
-                    </ul>
+                        </ul>
                 </article>
+
+                <form action="">
+                    <fieldset>
+                        <legend>Write me!</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" minlength="8">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email"minlength="8">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="25" rows="2"minlength="20"></textarea>
+                        <button type="submit">Send message</button>
+                    </fieldset>
+                </form>
             </section>
 
         </section>
