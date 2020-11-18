@@ -194,7 +194,7 @@ padding-right: 40px;} */
 .about-wrapper {
     margin: 25px auto;
     max-width: 1000px;
-    height: 850px;
+    height: 100%;
     border-radius: 10px;
     background: var(--powder-blue);
 }
@@ -213,6 +213,7 @@ padding-right: 40px;} */
 
 .about-wrapper ul {
     margin-top: 30px;
+    margin-left: 30px;
 }
 .about-wrapper p {
         margin-top: 30px;
@@ -265,4 +266,36 @@ fieldset {
       .properties-2 { width: 100%; }
       .properties-3 { width:100%; }
       .prop { margin: 20px 0px 20px 0px;}
+}
+
+
+/*...............works...mobile...............*/
+
+
+
+
+/*...............gallery mobile.............*/
+
+
+.gallery-wrapper {
+    width: 90%;
+    display: block;
+
+}
+.gallery-wrapper img {
+    margin: 10px auto;
+    margin-left: 5%;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
+
+/*......................about mobile..................*/
+.about{
+
+    display: block;
+    
+    margin: 10px;
+}
+
+
 }
