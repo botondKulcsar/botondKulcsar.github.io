@@ -134,14 +134,15 @@ article {
     margin: 3% auto;
     padding: 0 2%;
     background-color: rgba(245, 222, 179, 0.8);
-
+    color: grey;
+    font-size: 1.2em;
     box-shadow: var(--shadow);
 }
 
 .feature-section {
     display: flex;
     flex-direction: column;
-    
+    padding-bottom: 3rem;
     justify-content: space-around;
     align-items: center;
     flex-basis: 25%;
@@ -149,7 +150,8 @@ article {
 
 .feature {
     padding: 3% 6%;
-    
+    color: grey;
+    font-size: 1.2em;
     text-align: center;
     align-self: stretch;
     background-color: rgba(245, 222, 179, 0.8);
@@ -162,7 +164,7 @@ article {
 
 
 footer {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     height: 6rem;
     padding: 3%;
 }
@@ -181,6 +183,10 @@ footer a:hover {
 
 /* --------------- WORKS ---------------- */
 
+main {
+    background:wheat;
+}
+
 main > section.works-section {
     display: flex;
     flex-direction: column;
@@ -196,6 +202,7 @@ main > section.works-section {
 
 .works-section > .text-div {
     padding: 1rem;
+    color: grey;
 }
 
 /* --------------- Media Query(es) -------------------- */
