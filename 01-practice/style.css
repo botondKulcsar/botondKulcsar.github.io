@@ -184,3 +184,63 @@ footer {
     
 }
 
+
+
+/* --------------------- GALLERY - MOBIL NÉZET ------------------------ */
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    background: whitesmoke;
+    width: 100%;
+    color: #35393C;
+    border: solid 2px;
+    border-color: whitesmoke;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+img {
+    width: 90vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+
+}
+
+/* --------------------- GALLERY - FULL SCREEN NÉZET ------------------------ */
+
+@media only screen and 
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    background: whitesmoke;
+    width: 100%;
+    color: #35393C;
+    border: solid 2px;
+    border-color: whitesmoke;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+img {
+    width: 90vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+
+}
+
