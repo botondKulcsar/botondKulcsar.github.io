@@ -73,6 +73,10 @@ nav {
     justify-content: space-between;
 }
 
+nav > p:first-child {
+    color: lightblue;
+    font-size: 1.1em;
+}
 
 header a {
     display: inline-block;
@@ -243,8 +247,9 @@ button {
     background: grey;
     color: wheat;
     padding: 0.5rem 1rem;
+    border: 1px solid lightblue;
     border-radius: 10px;
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
 }
 
 button:hover {
@@ -373,7 +378,9 @@ figure > img {
     }
 
     
-    
+    footer {
+        padding-top: 1.5%;
+    }
 
 }
 
