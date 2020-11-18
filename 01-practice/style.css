@@ -1,3 +1,8 @@
+body {
+    font-family: 'Xanh Mono', monospace;
+}
+
+
 /* ----------------Header-------------------- */
 
 header {
@@ -14,6 +19,7 @@ header {
 
 a {
     text-decoration: none;
+    font-size: 0.7em;
 }
 
 /* -------------------Main----------------------- */
@@ -32,9 +38,9 @@ main {
 
 .quote {
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
     background-color: grey;
-    padding: 2px;
+    padding: 10px;
     max-width: 95%;
     margin: 1% auto;
 }
