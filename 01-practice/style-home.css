@@ -1,0 +1,160 @@
+#header {
+    display: table;
+    width: 100%;
+    min-height: 400px;
+    background: url("https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") no-repeat 50% 50%;
+    background-size: cover;
+}
+.name {
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.position {
+    font-size: 40px;
+}
+
+.line {
+    position: relative;
+    font-size: 20px;
+}
+.line::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: #d4d4d4;
+    width: 150px;
+    text-align: center;
+    top: 11px;
+}
+.line::before {
+    background: #d4d4d4 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    margin-left: -150px;
+    position: absolute;
+    text-align: center;
+    top: 11px;
+    width: 150px;
+}
+.line i {
+    color: var(--default-blue);
+    transform: rotate(45deg);
+    position: relative;
+    margin: 0 20px;
+    
+}
+
+.pic-holder {
+    position: relative;
+    margin: 20px;
+}
+.pic-holder::after {
+    border: 1px solid var(--default-dark-blue);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 3%;
+    left: 3%;
+    display: block;
+}
+
+.personal-contact {
+    padding-top: 30px;
+}
+.personal-contact a {
+    color: var(--default-color);
+}
+.personal-contact a:hover {
+    color: var(--default-blue);
+}
+
+.good-at {
+    text-align: center;
+    display: grid;
+    grid-template: repeat(3, minmax(0, 1fr)) / minmax(0, 1fr);
+    justify-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.good-at h4 {
+    text-align: center;
+}
+.good-at div {
+    width: 200px;
+    background: #f6f6f6;
+    padding: 20px;
+    outline: 1px solid var(--default-dark-blue);
+    outline-offset: -10px;
+}
+
+
+
+@media only screen and (min-width: 650px){
+
+    .who-am-i {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+        gap: 20px
+    }
+    .pic-me {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .personal-contact {
+        grid-area: 1 / 2 / 2 / 4;
+        padding-top: 0;
+    }
+    .personal-details {
+        grid-area: 2 / 1 / 3 / 4;
+    }
+
+    .good-at {
+        grid-template: minmax(0, 1fr) / repeat(3, minmax(0, 1fr));
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media only screen and (min-width: 980px){
+    
+    #header {
+        min-height: 1000px;
+    } 
+    
+    .name {
+        font-size: 100px;
+        font-family: 'Merriweather', serif;
+    }
+    .position {
+        font-size: 80px;
+    }
+
+    .who-am-i {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    }
+    .pic-me {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+    .personal-contact {
+        grid-area: 1 / 2 / 2 / 4;
+    }
+    .personal-details {
+        grid-area: 2 / 2 / 3 / 4;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+
+    .personal-contact {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-rows: 50px minmax(0, 1fr);
+        gap: 20px
+    }
+    .personal-contact h3 {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+}

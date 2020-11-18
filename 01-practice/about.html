@@ -11,21 +11,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>About</title>
+    <link rel="stylesheet" href="style-about.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"> 
+
+    <script src="https://kit.fontawesome.com/70ca8e5447.js" crossorigin="anonymous"></script>
+    <title>Anikó - Frontend fejlesztő :: Rólam</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <p>About</p>
-            <p>
-                <a href="home.html">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="works.html">Works</a>
-            </p>
-        </nav>
+    <header id="sub-header">
+        <div class="intro">
+            <nav class="socials">
+                <div>
+                    <a href="#" title="Nézd meg a Facebook adatlapom"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div>
+                    <a href="#" title="Keress linkedIn-en"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div>
+                    <a href="#" title="Hívjfel skype-on"><i class="fab fa-skype"></i></a>
+                </div>
+                <div>
+                    <a href="#" title="Írj rám discord-on"><i class="fab fa-discord"></i></a>
+                </div>
+            </nav>
+        </div>
     </header>
+
+    <nav id="nav">
+        <p>Anikó - Frontend fejlesztő</p>
+        <a href="home.html">Főoldal</a>
+        <a class="active" href="about.html">Rólam</a>
+        <a href="gallery.html">Galéria</a>
+        <a href="works.html">Munkáim</a>
+    </nav>
+
+    <main id="main">
+        <h1>Rólam</h1>
+        <section class="who-am-i">
+            <div class="pic-me">
+                <div class="pic-holder">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="Ez vagyok én, Anikó, frontend fejlesztő">
+                </div>
+            </div>
+            <div class="personal-contact">
+                <h3>Adatok, elérhetőségek</h3>
+                <div>
+                    <p><strong>Név:</strong> Gárdonyi Anikó</p>
+                    <p><strong>E-mail:</strong> <a href="#">aniko@aniko.hu</a></p>
+                    <p><strong>Telefon:</strong> +36-20-111-2222</p>
+                </div>
+                <div>
+                    <p><strong>Születési idő:</strong> 1983.05.25.</p>
+                    <p><strong>Cím:</strong> 1111 Budapest, Teszt utca 1</p>
+                    <p><strong>Weboldal:</strong> <a href="#">www.aniko.hu</a></p>
+                </div>
+            </div>
+            <div class="personal-details">
+                <h3>Egy kicsit magamról</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis purus non fermentum sagittis. Suspendisse dui urna, tempor sed semper at, aliquam sed sem. Curabitur laoreet rutrum dictum. Suspendisse potenti. Morbi et odio a neque congue facilisis. Cras et orci porta, pulvinar metus eget, tincidunt orci. Duis sodales lacus eu rhoncus vulputate. Donec dapibus, nisl eu tincidunt sodales, nibh massa hendrerit risus, vel fringilla nulla arcu sit amet orci. Phasellus vitae dolor sapien. Curabitur ac pellentesque nisl. Ut convallis purus sed odio eleifend mollis. Nunc consectetur lorem sed est tincidunt, facilisis dictum ante ultrices. </p>
+                <p>Suspendisse vitae elit diam. Maecenas sed elementum urna. Mauris bibendum quam quis nulla laoreet, nec consequat tellus rhoncus. In nibh purus, ornare ac lacus ac, euismod sodales dolor. Nullam sodales nulla id leo consequat, id tempus nulla rhoncus. In ornare luctus ante, eget pretium velit ultrices et. Ut commodo ut urna id pretium. Mauris dolor lacus, tristique vel nisl vitae, scelerisque accumsan libero. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis purus non fermentum sagittis. Suspendisse dui urna, tempor sed semper at, aliquam sed sem. Curabitur laoreet rutrum dictum. Suspendisse potenti. Morbi et odio a neque congue facilisis. Cras et orci porta, pulvinar metus eget, tincidunt orci. Duis sodales lacus eu rhoncus vulputate. Donec dapibus, nisl eu tincidunt sodales, nibh massa hendrerit risus, vel fringilla nulla arcu sit amet orci. Phasellus vitae dolor sapien. Curabitur ac pellentesque nisl. Ut convallis purus sed odio eleifend mollis. Nunc consectetur lorem sed est tincidunt, facilisis dictum ante ultrices. </p>
+            </div>
+        </section>
+        <section class="listing">
+            <div>
+                <h3>Beszélt nyelvek</h3>
+                <ul>
+                    <li>Angol - tárgyalási szint</li>
+                    <li>Német - társalgási szint</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Hobbik</h3>
+                <ul>
+                    <li>Természetjárás</li>
+                    <li>Olvasás</li>
+                    <li>Dokumentum filmek</li>
+                    <li>Lovaglás</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Korábbi munkahelyek</h3>
+                <ol>
+                    <li>Szuper Kft: Frontend csapatvezető - 2018-</li>
+                    <li>Programozzunk Kft: Senior frontend fejlesztő - 2015-2018</li>
+                    <li>Weblap Bt: Junior frontend fejlesztő - 2010-2015</li>
+                </ol>
+            </div>
+        </section>
+        <section>
+            <h2>Írj nekem</h2>
+            <form class="write-me" action="">
+                <input required type="text" name="name" id="name" placeholder="Neved*">
+                <input required type="email" name="email" id="email" placeholder="E-mail címed*">
+                <textarea required name="message" id="message" rows="6" placeholder="Üzeneted*"></textarea>
+                <input type="submit" value="Küldés" id="send">
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <a href="#">Adatvédelmi nyilatkozat</a>
+        <a class="up" href="#sub-header" title="Az oldal tetejére"><i class="fas fa-arrow-up"></i></a>
+    </footer>
 
 </body>
 

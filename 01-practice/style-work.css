@@ -1,0 +1,23 @@
+.refs {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 1px solid var(--default-color);
+    padding: 20px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+}
+
+
+
+@media only screen and (min-width: 980px){
+
+    .refs {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);    
+    }
+    .refs h3 {
+        margin-top: 0;
+    }
+
+}
