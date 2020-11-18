@@ -1,3 +1,11 @@
+:root{
+    --bottom-color: #44AF69;
+    --first-background-color: rgb(125, 220, 233);
+    --second-background-color: rgb(123, 211, 192);
+    --shadow: 1px 2px 1px 5px rgba(0, 0, 0, 0.5);
+    --title-size: 1.6em;
+    }
+
 /*----- color schema-------*/
 .red{
     background: red;
@@ -35,7 +43,13 @@ html, *{
 body{
     margin: 0;
     padding: 0;
+
+
 }
+
+/* Headre and Footer for all Files-/
+
+
 /*---------HEADER-----*/
 
 header{
@@ -56,12 +70,7 @@ header nav{
     left: 50%;
     top: 50%;
 
-
-
 }
-
-
-
 
 /*-----FOOTER-----*/
 
@@ -83,5 +92,78 @@ footer{
     color: whitesmoke;
     }
     
+/*------About-----*/
+
+.about-picture {
+
+width: 100%;
+background-color: var(--first-background-color);
 
 
+}
+
+.about-picture img {
+width: 95%;
+box-shadow: ;
+padding: 3%;
+box-shadow: var(--shadow);
+
+}
+
+.about-article{
+background: var(--second-background-color);
+
+}
+.about-article h1{
+
+    text-align: center;
+    font-size: 4vw;
+
+}
+
+
+
+
+@media only screen and (min-width: 750px) {
+    header nav {
+        position: absolute;
+        width: 40%;
+        left: auto;
+        right: 2%;
+        top: 2%;
+        transform: translate(-2%, -2%);
+        background: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        
+
+        }
+    
+.about-picture{
+    width: 49%;
+    float: left;
+}
+
+.about-article{
+    max-height: 100%;
+    width: 49%;
+    float: left;
+}
+.about-picture-section::after {
+
+    content: "";
+    clear: both;
+    display: block;
+
+}
+.about-fieldset{
+    text-align: center;
+    width: 80%;
+    margin: 2px auto;
+    font-size: 1.8vw;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+       
+}
