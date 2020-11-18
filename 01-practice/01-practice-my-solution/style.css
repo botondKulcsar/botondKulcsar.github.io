@@ -176,23 +176,25 @@ a {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: minmax(200px, auto);
-}
 
-.work__project--image-wrapper {
+   border-radius: 0.5rem;
+   box-shadow: var(--default-box-shadow);
+
    min-height: 200px;
    width: 98%;
    height: 98%;
    padding: var(--default-section-padding);
    margin: var(--default-section-margin);
-   border-radius: 0.5rem;
-   box-shadow: var(--default-box-shadow);
+}
 
+.work__project--image-wrapper {
    display: flex;
    flex-direction: column;
    justify-content: center;
 }
 
 .work__project--image {
+   border-radius: 0.5rem;
    display: block;
    max-width: 98%;
    max-height: 98%;
@@ -205,7 +207,6 @@ a {
    text-align: center;
    padding: var(--default-section-padding);
    margin: var(--default-section-margin);
-   border: 1px dotted black;
 }
 
 .work__project-description {
