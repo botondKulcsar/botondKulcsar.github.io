@@ -25,7 +25,7 @@
 
     <header>
         <nav>
-            <p>Home Page</p>
+            <p class="logo">Home Page</p>
             <p>
                 <a href="about.html">About</a>
                 <a href="gallery.html">Gallery</a>
@@ -33,7 +33,49 @@
             </p>
         </nav>
     </header>
-
+    <main>
+        <section class="title-wrapper">
+            <article class="title-container">
+                <h2>Szia kedves látogató!</h2>
+                <p>Jakab Gábor vagyok és Webfejlesztést tanulok a Progmaster-nél.</p>
+            </article>
+            <section class="images-wrapper">
+                <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="két monitor kép">
+                <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1311&q=80" alt="laptop kép">
+            </section>
+        </section>
+        <section class="boxes-wrapper">
+            <div class="box">
+                <h3>Alapos</h3>
+            </div>
+            <div class="box">
+                <h3>Alázatos</h3>
+            </div>
+            <div class="box">
+                <h3>Álmodozó</h3>
+            </div>
+        </section>
+        <section class="form-wrapper">
+            <div class="contact-container">
+                <h2>Itt tudsz nekem üzenetet küldeni!</h2>
+            </div>
+            <form action="#">
+                <div class="fields">
+                    <div class="field name">
+                        <input type="text" placeholder="Név" required>
+                    </div>
+                    <div class="field email">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                </div>
+                    <div class="field-area">
+                            <div class="field textarea">
+                            <textarea cols="70" rows="10" placeholder="Küldj üzenetet" required></textarea>
+                        </div>
+                    </div>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
