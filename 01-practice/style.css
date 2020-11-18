@@ -1,0 +1,87 @@
+/*----- color schema-------*/
+.red{
+    background: red;
+}
+
+.blue{
+    background: blue;
+
+}
+
+.yellow{
+    background: yellow;
+}
+
+.green{
+    background: green;
+}
+
+.purple{
+    background: purple;
+}
+.pink{
+    background: pink;
+}
+html, *{
+    box-sizing: border-box;
+
+}
+/*---------BODY HTML--------*/
+
+*,*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/*---------HEADER-----*/
+
+header{
+    width: 100%;
+    min-height: 200px;
+    background-image: url(https://images.unsplash.com/photo-1560364897-91578ff41817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+
+}
+header nav{
+    position:absolute;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+
+
+}
+
+
+
+
+/*-----FOOTER-----*/
+
+footer{
+
+    background: rgb(86, 121, 150);
+    min-height: 100px;
+    padding: 1px;
+    text-align: center;
+    display: block;
+    color: whitesmoke;
+
+
+}
+    
+    footer a{
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    }
+    
+
+
