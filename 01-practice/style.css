@@ -11,15 +11,14 @@ html, * {
 /*----------Gallery------*/
 .gallery-wrapper {
     display: grid;
-    grid-template-columns: repeat(12,1fr)
     grid-template-rows: minmax(150px, auto);
     grid-gap: 2%;
     align-items: center;
-    justify items: center;
+    /* justify-content: center; */
 }
 
 .gallery-wrapper img {
-    grid-column: 1/13;
+    grid-column: 100%;
     width: 60%;
     display: block;
     margin: 2% auto;
@@ -34,6 +33,7 @@ html, * {
 
 
     .gallery-wrapper {
+       grid-template-columns: repeat(12,1fr);
        justify-items: space-evenly;
        align-items: space-evenly;
     }
@@ -45,7 +45,7 @@ html, * {
        
     .gallery-wrapper img {
         width: 15em;
-        display: inline-block;
+        display: inline;
       
     }
     .first-row {
@@ -63,18 +63,23 @@ html, * {
      }
 
     .third-row {
+        grid-column: 1/13;
         grid-row: 3/4;
     }
     .fourth-row{
+        grid-column: 1/13;
         grid-row: 4/5;
     }
     .fifth-row {
+        grid-column: 1/13;
         grid-row: 5/6;
     }
     .sixth-row {
+        grid-column: 1/13;
         grid-row: 6/7;
     }
     .last-row {
+        grid-column: 1/13;
         grid-row: 7/8;
     }
-
+}
