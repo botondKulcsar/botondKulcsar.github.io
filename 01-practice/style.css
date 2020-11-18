@@ -94,7 +94,7 @@ nav .logo {
 .boxes-wrapper {
     width: 80%;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 2%;
     background: rosybrown;
     display: flex;
     flex-direction: row;
@@ -106,17 +106,71 @@ nav .logo {
 }
 
 .box {
+    display: flex;
     height: 150px;
     max-height: 150px;
     padding: 5em;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
     background-color: #E8F1F2;
     font-size: 2em;
     color: #001A23;
     border-radius: 10px;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
+.box h3 {
+    align-self: center;
+}
+/* --------------FOOTER------------ */
+
+footer {
+    width: 100vw;
+    height: 80px;
+    background-color: #001A23;
+    position: relative;
+}
+
+footer img {
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    transform: translate(-10%);
+    width: 60px;
+    cursor: pointer;
+}
+
+/* --------------GALLERY PAGE------------ */
+main {
+    display: grid;
+}
+.gallery-wrapper {
+    width: 95%;
+    margin: 2% auto;
+
+}
+
+.gallery-wrapper img {
+    width: 100%;
+    margin: 1% auto;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 1000px) {
+    .gallery-wrapper {
+        width: 95%;
+        margin: 2% auto;
+     }
+    
+    .gallery-wrapper img {
+        width: 32%;
+        height: 350px;
+        margin: .5% .5%;
+        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+        gap: 9px;
+        border-radius: 10px;
+    }
+}
+/* --------------ABOUT PAGE------------ */
 
 /* --------------FORM------------ */
 
@@ -174,54 +228,4 @@ textarea {
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     font-size: 1.3em;
-}
-
-/* --------------FOOTER------------ */
-
-footer {
-    width: 100vw;
-    height: 80px;
-    background-color: #001A23;
-    position: relative;
-}
-
-footer img {
-    position: absolute;
-    left: 1%;
-    top: 10%;
-    transform: translate(-10%);
-    width: 60px;
-    cursor: pointer;
-}
-
-/* --------------GALLERY PAGE------------ */
-main {
-    display: grid;
-}
-.gallery-wrapper {
-    width: 95%;
-    margin: 2% auto;
-
-}
-
-.gallery-wrapper img {
-    width: 100%;
-    margin: 1% auto;
-    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
-}
-
-@media only screen and (min-width: 1000px) {
-    .gallery-wrapper {
-        width: 95%;
-        margin: 2% auto;
-     }
-    
-    .gallery-wrapper img {
-        width: 32%;
-        height: 350px;
-        margin: .5% .5%;
-        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
-        gap: 9px;
-        border-radius: 10px;
-    }
 }

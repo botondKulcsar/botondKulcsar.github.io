@@ -55,26 +55,7 @@
                 <h3>Álmodozó</h3>
             </div>
         </section>
-        <section class="form-wrapper">
-            <div class="contact-container">
-                <h2>Itt tudsz nekem üzenetet küldeni!</h2>
-            </div>
-            <form action="#">
-                <div class="fields">
-                    <div class="field name">
-                        <input type="text" placeholder="Név" required>
-                    </div>
-                    <div class="field email">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                </div>
-                    <div class="field-area">
-                            <div class="field textarea">
-                            <textarea cols="70" rows="10" placeholder="Küldj üzenetet" required></textarea>
-                        </div>
-                    </div>
-            </form>
-        </section>
+        
     </main>
     <footer> 
       <img onclick="topFunction()" src="up-arrow.svg" alt="">
@@ -83,7 +64,7 @@
 
 <script>
     function topFunction() {
-  document.documentElement.scrollTop = 0;
+        window.scrollTo({top: 0, behavior: 'smooth'});
 }
 </script>
 </html>
