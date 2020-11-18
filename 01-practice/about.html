@@ -1,7 +1,11 @@
-<!-- About: ezen az oldalon legyen egy hosszabb bemutatkozás, de itt is elég 5-10 mondat. 
-    Helyezz el egy nagyobb képet magadról (vagy arról akit bemutatsz) az oldal bal felső sarkában.
-    Mit csináltam eddig, mik az erősségeim, mi a hobbim, milyen nyelveket beszélek. 
-    Használd a megfelelő HTML elemeket a felsorolásokhoz, legyen benne számmal, 
+<!-- About: ezen az oldalon legyen egy hosszabb bemutatkozás, de itt is 
+    elég 5-10 mondat. 
+    Helyezz el egy nagyobb képet magadról (vagy arról akit bemutatsz) az 
+    oldal bal felső sarkában.
+    Mit csináltam eddig, mik az erősségeim, mi a hobbim, milyen nyelveket 
+    beszélek. 
+    Használd a megfelelő HTML elemeket a felsorolásokhoz, legyen benne 
+    számmal, 
     ponttal való felsorolás is.  -->
 
 <!DOCTYPE html>
@@ -10,22 +14,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
     <title>About</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <p>About</p>
+    <header class="">
+        <h1>About</h1>
+        <nav id="nav-bar">
             <p>
                 <a href="home.html">Home</a>
-                <a href="gallery.html">Gallery</a>
                 <a href="works.html">Works</a>
+                <a href="gallery.html">Gallery</a>
             </p>
         </nav>
     </header>
+
+    <main>
+        <article>
+            <h2>Élete</h2>
+            <img src="https://cultura.hu/wp-content/uploads/2017/11/ady-endre-cultura-head.jpg" alt="">
+            <div class="list">
+            <ol>
+                <li>Veleszületett testi adottságai
+                    <ul>
+                        <li>Ady több átlagostól eltérő testi adottsággal jött a világra.</li>
+                        <li>Mindkét[6] kezén hatujjúsággal született. A rendellenesség enyhébb változatát jelentő, csupán csont nélküli, csökevényes bőrnövedékeket születése után – a tövüknél cérnahurokkal elkötve, elsorvasztva – a bába tökéletesen eltávolította.</li>
+                        <li>Sokujjúságát később a költő a kiválasztottság táltosjeleként értékelte, és ez a közvéleményben is misztikumként lengte körül. Emellett „mindkét oldalt lenőtt” füllel, és feltűnően nagy, rövidlátó szemmel született. </li>
+                        <li>Felnőttként hiúságból nem hordott szemüveget, inkább egészen közelre hajolva olvasott. </li>
+                        <li>Lábai alkatilag véznák, gyengék, ennek tudhatta be bizonytalan járását, nagy bütykei miatt pedig speciális cipők viselésére kényszerült.</li>
+                    </ul>
+                </li>
+                <li>Gyermekkor
+                    <ul>
+                    <li>Tanulmányait az érmindszenti református elemi iskolában kezdte 1883-ban, ahol Katona Károly tanította írásra, olvasásra, számolásra, bibliai történetekre és zsoltáros énekekre. </li>
+                    <li>Szülei idővel gimnáziumba szánták, ez volt az oka, hogy tanulmányait 1886-tól a katolikus népiskolában folytatta Hark István keze alatt.</li>
+                    <li> Az elemi befejeztével, 1888-ban a nagykárolyi piarista gimnáziumba került. Ebben az iskolában voltak saját bevallása szerint a legszörnyűbb diákévei, amellett, hogy itt erősödött meg a fizikailag addig gyengécske gyerek. </li>
+                    <li>Itt írta első költeményeit is, amelyek többnyire verses csúfolódások voltak, és ezekből az évekből származik barátsága Jászi Oszkárral, akivel együtt jártak hittanra.</li>
+                </ul></li>
+                <li>Életpályája
+                    <ul>
+                    <li>Édesapja a lecsúszott család újbóli felemelkedésének lehetőségét, a leendő szolgabírót látta fiában, ezért beíratták a debreceni jogakadémiára. </li>
+                    <li>A várost nem sikerült megszeretnie: szülei beleegyezését megszerezve a második évre már a pesti jogi karra iratkozott be, majd Temesvárra ment, ahol délelőtt a királyi táblánál írnokoskodott, délután magánórákat adott. </li>
+                    <li>Temesvárról nagyon betegen vitte haza édesanyja 1897 karácsonyán, ahonnan felgyógyulva utazott újra Budapestre, a negyedik félévre beiratkozni. A többször is megküldött tandíj azonban korhelykedésre úszott el. </li>
+                    <li>Nem mert szülei szeme elé kerülni, ezért Zilahra utazott, ahol ügyvédbojtár lett és egy barátjánál lakott. Ez idő tájt született meg egy önálló verseskötet kiadásának gondolata. </li>
+                    <li>Ősszel az egyetem folytatásának szándékával ismét Debrecenbe ment, azonban az előadásokat hanyagul látogatta, sokkal jobban érdekelték a lapok (Debreceni Főiskolai Lapok, Debreceni Ellenőr, Debreceni Hírlap). </li>
+                </ul></li>
+                <li>Költészete
+                    <ul>
+                    <li>A 19-20. század fordulójának magyar költészetét a haldokló népi-nemzeti iskola határozta meg, mely Petőfi nyomain járt, utánozta népies hangját és nem tudta magát megújítani. </li>
+                    <li>Ady, ha nem is az első volt, aki szakított a hagyománnyal, de az első, aki utat tört egy új, modern stílusnak. Bár szívesen tetszelgett a magányos, meg nem értett forradalmár szerepében, a valóságban költőtársai támogatták őt és sokan utánozták verseit. </li>
+                    <li> Maga Ady nem kedvelte az utánzókat, és A duk-duk affér[13] című írásában ki is gúnyolta őket.</li>
+                </ul></li>
+            </ol>
+        </div>
+        </article>
+    </main>
+
+<footer></footer>
 
 </body>
 

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display&family=Xanh+Mono&display=swap');
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Xanh Mono', monospace; */
+
+html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* _____________ COLORS _____________ */
+
+.red {
+    background: red;
+}
+.green {
+    background: green;
+}
+.yellow {
+    background: yellow;
+}
+.blue {
+    background: blue;
+}
+.purple {
+    background: purple;
+}
+
+/* _____________ HEADER _____________ */
+
+header {
+    height: 150px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+    text-align: center;
+    padding: 1px;
+}
+h1{
+    margin: 1% 0 1% 0;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 100px;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/* _________________ MAIN _____________ */
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 300px 300px;
+    gap: 3px;
+}
+
+
+
+/* _____________ FOOTER ___________ */
+
+footer {
+    height: 150px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
