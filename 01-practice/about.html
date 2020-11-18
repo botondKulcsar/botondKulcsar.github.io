@@ -4,6 +4,12 @@
     Használd a megfelelő HTML elemeket a felsorolásokhoz, legyen benne számmal, 
     ponttal való felsorolás is.  -->
 
+<!-- Az oldal alján legyen egy űrlap, amin keresztül üzenetet tudnak neked küldeni. 
+    Az adatokat ellenőrizni is kell, az alábbiak szerint:
+    Név 
+    Email (valid email címnek kell lennie).
+    Üzenet  -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,12 +18,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>About</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <nav>
+        <nav id="nav-bar">
             <p>About</p>
             <p>
                 <a href="home.html">Home</a>
@@ -27,6 +35,56 @@
         </nav>
     </header>
 
+    <main class="abount-main">
+        <div class="about-img">
+            <img src="static/me.jpg" alt="">
+        </div>
+
+        <section class="abount-text">
+            <article>
+                <p>Donec vulputate arcu mi, a malesuada diam venenatis et. Nulla sagittis odio sit amet facilisis
+                    consequat. Mauris placerat, arcu id imperdiet ornare, magna est euismod nibh, id efficitur nisi
+                    ipsum nec est. Curabitur faucibus, dui quis dictum lobortis, risus ante vulputate felis, nec dictum
+                    velit velit vel ipsum. Pellentesque quis ornare purus.</p>
+                <p>Morbi sed rutrum purus. Pellentesque
+                    vulputate interdum neque, id ultricies velit pharetra vitae. In faucibus metus nec auctor
+                    scelerisque. Aliquam ornare dignissim nibh, iaculis dictum leo molestie vel. Orci varius natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eu molestie risus. Proin
+                    quis turpis urna. Aliquam rhoncus lacus vitae semper finibus. Nullam non lacinia ante.</p>
+            </article>
+            <article>
+                <p>Strength</p>
+                <p>creativity</p>
+                <p>energy</p>
+                <p>kindness</p>
+                <p>endurance</p>
+                <p>diligence</p>
+                <p>perfectionist</p>
+            </article>
+            <article>
+                <p>Hobby</p>
+                <ul>
+                    <li>hiking with kids in mountains</li>
+                    <li>gardening in every season</li>
+                    <li>running</li>
+                </ul>
+            </article>
+            <article>
+                <p>Language</p>
+                <ul>
+                    <li>Hungarian</li>
+                    <li>English</li>
+                    <li>German</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <nav id="footer-nav">
+            <a href="#nav-bar">Arrow up icon</a>
+        </nav>
+    </footer>
 </body>
 
 </html>
