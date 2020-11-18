@@ -129,7 +129,7 @@ main {
 
 /* --------- article ---------- */
 
-article {
+article.article-home {
     width: 70%;
     margin: 3% auto;
     padding: 0 2%;
@@ -156,6 +156,7 @@ article {
     align-self: stretch;
     background-color: rgba(245, 222, 179, 0.8);
     border: 1px solid grey;
+    box-shadow: var(--shadow);
 }
 
 
@@ -205,6 +206,55 @@ main > section.works-section {
     color: grey;
 }
 
+/* ---------------- ABOUT ------------ */
+main.about {
+    color: grey;
+}
+main > div.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: wheat;
+    box-shadow: var(--shadow);
+}
+
+aside > div.main-photo > img {
+    width: 100%;       
+}
+
+div.flex-wrapper > section {
+    padding: 0 2rem;
+}
+
+form {
+    background: wheat;
+    padding: 3rem;
+    box-shadow: var(--shadow);
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+button {
+    background: grey;
+    color: wheat;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+button:hover {
+    background: lightblue;
+    color: grey;
+}
+
+
+
+
 /* --------------- Media Query(es) -------------------- */
 
 @media only screen and (min-width: 750px) {
@@ -241,7 +291,54 @@ main > section.works-section {
         flex-direction: row-reverse;
     }
 
+    /* ------------- ABOUT ----------- */
+    main.about {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+    main > div.flex-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+    }
 
+    div.flex-wrapper > aside {
+        flex: 30%;
+        padding-left: 3rem;
+    }
+
+    div.flex-wrapper > section {
+        flex: 70%;
+    }
+    
+    aside > div.main-photo  {
+        border-radius: 99em;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        position: sticky;
+        top: 30vh;
+        margin: 0 auto;
+    }
+
+    aside > div.main-photo img  {
+        /* display: inline; */
+        
+        margin-left: -25%;
+        height: 100%;
+        width: auto;
+        
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    
 
 }
 

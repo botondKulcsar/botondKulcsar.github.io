@@ -4,6 +4,12 @@
     Használd a megfelelő HTML elemeket a felsorolásokhoz, legyen benne számmal, 
     ponttal való felsorolás is.  -->
 
+<!-- Az oldal alján legyen egy űrlap, amin keresztül üzenetet tudnak neked küldeni. 
+    Az adatokat ellenőrizni is kell, az alábbiak szerint:
+    Név 
+    Email (valid email címnek kell lennie).
+    Üzenet  -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +32,60 @@
             </p>
         </nav>
     </header>
+
+    <main class="about blue"  id="home">
+        <div class="flex-wrapper">
+            <aside >
+                <div class="main-photo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Kismet-IMG_6007-gradient.jpg/512px-Kismet-IMG_6007-gradient.jpg" alt="portrait of a robot called Kismet">
+                    
+                </div>
+            </aside>
+            <section >
+                <article>
+                    <h1>Kismet</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quam dolorum, sunt ab quo sint nostrum sequi a, excepturi beatae placeat obcaecati commodi suscipit hic laborum eos nihil quisquam delectus?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, consequatur excepturi tempora quas corporis modi saepe doloribus magnam dolore ex pariatur optio sit quibusdam quae esse delectus voluptatibus? Perferendis, eligendi.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus aperiam suscipit maxime, perspiciatis non dolorem repudiandae a ex tempore laborum totam magnam, animi, obcaecati repellat dolores eum sunt numquam voluptate.</p>
+                    <ul>
+                        <li>feature 1</li>
+                        <li>feature 2</li>
+                        <li>feature 3</li>
+                        <li>feature 4</li>
+                    </ul>
+                </article>
+                <article>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ducimus fugiat quaerat, architecto, ipsum asperiores tempore suscipit laboriosam aperiam dolorum vel? Neque veritatis consectetur omnis recusandae quo aperiam obcaecati sint.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deleniti commodi doloribus quaerat debitis. Incidunt, vero, sapiente nemo dolor quisquam reprehenderit deleniti cum dolore iure qui totam non, porro amet.</p>
+                    <ol>
+                        <li>characteristic</li>
+                        <li>characteristic</li>
+                        <li>characteristic</li>
+                    </ol>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos facilis placeat id. Hic vero modi veniam corrupti eligendi. Incidunt quibusdam, sapiente aliquam libero nam perspiciatis repudiandae corrupti laboriosam labore!</p>
+                </article>
+            </section>
+        </div>
+        
+        <form action="">
+            <fieldset>
+                <legend>Drop me a message!</legend>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Type your name here"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your e-mail address"><br>
+                <label for="message">Enter your message:</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Type your message here"></textarea><br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="grey">
+        <div class="go-up">
+            <a href="#home">Go up</a>
+        </div>
+    </footer>
 
 </body>
 
