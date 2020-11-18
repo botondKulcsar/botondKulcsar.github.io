@@ -2,7 +2,7 @@
     --bottom-color: #44AF69;
     --first-background-color: rgb(125, 220, 233);
     --second-background-color: rgb(123, 211, 192);
-    --shadow: 1px 2px 1px 5px rgba(0, 0, 0, 0.5);
+    --shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0.5);
     --title-size: 1.6em;
     }
 
@@ -104,7 +104,6 @@ background-color: var(--first-background-color);
 
 .about-picture img {
 width: 95%;
-box-shadow: ;
 padding: 3%;
 box-shadow: var(--shadow);
 
@@ -115,55 +114,218 @@ background: var(--second-background-color);
 
 }
 .about-article h1{
+text-align: center;
+font-size: 4vw;
 
-    text-align: center;
-    font-size: 4vw;
+}
+/*------Gallery-----*/
+
+.main-gallery{
+text-align: center;
+padding: 6px;
+width: 100%;
+}
+
+.gallery-picture{
+width: 100%;
+background-color: var(--first-background-color);
+    
+}
+.gallery-picture img{
+width: 95%;
+padding: 3%;
+box-shadow: var(--shadow);
+text-align: center;
+margin: 2px auto;
 
 }
 
 
 
+/*-------Works--------*/
+
+.works-centers{
+    text-align: center;
+    padding: 6px;
+    background-color: var(--first-background-color);
+    width: 100%;
+
+    }
+    
+.works-text{
+    width: 100%;
+    font-size: 1.7vw;
+        
+    }
+    .works-centers img{
+    
+    width: 95%;
+    padding: 3%;
+    box-shadow: var(--shadow);
+    text-align: center;
+    margin: 2px auto;
+    
+    }
+
+
+/*-------Home-----*/
+
+.home-text{
+text-align: center;
+font-size: 2vw;
+padding: 5%;
+}
+.home-text1{
+    text-align: center;
+    font-size: 2vw;
+    padding: 1%;
+    }
+
+
+
+.home-bigpicture{
+    text-align: center;
+    padding: 6px;
+    background-color: var(--first-background-color);
+    width: 100%;
+
+}
+
+.home-center img{
+    
+    width: 95%;
+    padding: 3%;
+    box-shadow: var(--shadow);
+    text-align: center;
+    margin: 2px auto;
+    
+    }
+
+.home-buttons{
+    width:80%;    
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: minmax(100px, auto);
+    grid-gap: 40px;
+    margin: 5% auto;
+    
+}
+.home-buttons div{
+    border: lightblue 4px solid;
+    background: linear-gradient(45deg,lightblue, rgb(31, 92, 110));    
+    border-radius: 10px;
+}     
+  
+
+
+
+
+
+/*------Media Tablet-----*/
+
 
 @media only screen and (min-width: 750px) {
-    header nav {
-        position: absolute;
-        width: 40%;
-        left: auto;
-        right: 2%;
-        top: 2%;
-        transform: translate(-2%, -2%);
-        background: rgba(255, 255, 255, 0.5);
-        text-align: center;
+header nav {
+position: absolute;
+width: 40%;
+left: auto;
+right: 2%;
+top: 2%;
+transform: translate(-2%, -2%);
+background: rgba(255, 255, 255, 0.5);
+text-align: center;
+font-size: 2vw;
         
 
         }
     
 .about-picture{
-    width: 49%;
-    float: left;
+width: 49%;
+float: left;
 }
 
 .about-article{
-    max-height: 100%;
-    width: 49%;
-    float: left;
+max-height: 100%;
+width: 49%;
+float: left;
+font-size: 1.8vw;
+padding: 10px;
 }
 .about-picture-section::after {
 
-    content: "";
-    clear: both;
-    display: block;
+content: "";
+clear: both;
+display: block;
 
 }
 .about-fieldset{
-    text-align: center;
-    width: 80%;
-    margin: 2px auto;
-    font-size: 1.8vw;
+text-align: center;
+width: 80%;
+margin: 2px auto;
+font-size: 1.8vw;
+}
+
+.main-gallery{
+display: grid;
+grid-template-columns: 33% 33% 33%;
+grid-template-rows: minmax(100px, auto);
+grid-gap: 5px;
 }
 
 
 
-@media only screen and (min-width: 1000px) {
-       
+.works-centers img{
+    width: 49%;
+    float: left;
+    }
+    
+.works-text{
+    width: 49%;
+    float: right;
+    font-size: 1.8vw;
+    padding: 5px;
+    }
+    
+.works-center1::after {
+    content: "";
+    clear: both;
+    display: block;
+        
+    }
+
+
+.home-bigpicture img{
+    width: 49%;
+    float: left;
+    }
+    
+.home-text{
+    width: 49%;
+    float: right;
+    font-size: 1.8vw;
+    padding: 5px;
+    }
+
+
+    
+.home-center::after {
+    content: "";
+    clear: both;
+    display: block;
+        
+    }
+
+
+footer{
+
+    font-size: 1.5vw;
+
+}
+
+    
+/*-------Media Full----*/
+
+
+@media only screen and (min-width: 1000px) {       
 }
