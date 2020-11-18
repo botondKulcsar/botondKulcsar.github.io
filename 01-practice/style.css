@@ -1,8 +1,8 @@
 :root{
 
     --shadow: 1px 4px 8px 15px rgba(0, 0, 0, 0.5);
-    --first-main-color: #DBD5B5 ; 
-    --second-main-color: #FCAB10;
+    --first-background-color: lightblue ; 
+    --second-background-color:rgb(133, 181, 197);
     --button-color:  #44AF69 ;
     --text-color: #F8333C;
     --title-font-size: 1.6em;
@@ -86,7 +86,7 @@ footer a {
 
 .about-photo {
     width: 100%;
-    background: chartreuse;
+    background: var(--first-background-color);
 }
 
 .about-photo img {
@@ -97,10 +97,23 @@ footer a {
 
 }
 
+.about-article {
+    background: var(--second-background-color);
+    margin: 2px auto;
+    width: 95%;
+
+
+}
+
+.about-article h1 {
+    text-align: center;
+    font-size: 2vw;
+}
+
 
 @media only screen and (min-width: 750px) {
 
-    header section { 
+    header nav { 
         width: 40%;
         left: auto;
         right: 2%;
@@ -110,7 +123,34 @@ footer a {
         text-align: center;
     }
 
+    
+    .about-photo {
+        width: 49%;
+        float: left;
+    }
+    
+    .about-article{
+        float: left;
+        width: 49%;
+        height: 100%;
+        
+    }
+
+    .about-photo-section::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .about-fieldset {
+        font-size: 1.4vw;
+        width: 95%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
 }
+
 
 @media only screen and (min-width: 1000px) {
 }
