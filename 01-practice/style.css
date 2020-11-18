@@ -56,8 +56,16 @@ padding-right: 40px;}
     gap: 10px;
   }
   .intro { grid-area: 1 / 1 / 2 / 13; 
-    width: 90%;
+    width: 100%;
     height: 200px;}
+    .intro h1 { width: 80%;
+        font-size: 2em;
+        margin: 10px auto;
+         }
+    .intro p {  
+        width: 80%;
+        margin: 0 auto;;
+        justify-self: center;}
   
   .img1 { grid-area: 2 / 2 / 3 / 6; }
   .img2 { grid-area: 2 / 8 / 3 / 12; } 
@@ -128,15 +136,21 @@ footer {
     margin: 10px;}
 
 .work p {
-    width: 50%;
+    width: 90%;
     height: 50%;
+    margin: auto 20px;
      text-align: justify;
      align-items: center;
-     background-color: var(--honeydew);
     }
-    .p-box { width: 50%;
+    .p-box {
+        margin: 20px;
+        margin-top: 50px;
+        border-radius: 5px;
+        width: 50%;
         height: 70%;
-        justify-content: center};
+        background-color: var(--honeydew);
+        justify-content: center;
+    }
 
 
 /*.................gallery................*/
@@ -145,13 +159,14 @@ footer {
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    
   
 
 }
 .gallery-wrapper img {
     margin: 5px;
-    width: 31%;
+    width: 32%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
 }
 
@@ -162,7 +177,7 @@ header a { float: right;
 text-decoration: none;
 padding-right: 40px;} */
 
-
+/*......................About.....................*/
 
 
 
