@@ -1,8 +1,8 @@
 /* color shemes
-#001A23
+var(--default-background-color)
 #B3EFB2
-#E8F1F2
-#31493C
+var(--wrapper-background-color)
+var(--container-background-color)
  */
 
 * {
@@ -11,10 +11,19 @@
     padding: 0;
 }
 
+:root {
+    --default-background-color: black;
+    --container-background-color: black;
+    --wrapper-background-color:black;
+    --default-text-color:  whitesmoke;
+    
+}
+
 body {
-    background-color: #E8F1F2;
+    background-color: #424342;
     color: black;
     overflow-x: hidden;
+    font-family: 'Roboto Mono', monospace;;
 }
 
 /* --------------HOME PAGE------------ */
@@ -29,7 +38,7 @@ nav {
     width: 100%;
     min-width: 100%;
     height: 80px;
-    background: #001A23;
+    background: var(--default-background-color);
     color: whitesmoke;
     font-size: 1.5em;
 }
@@ -42,46 +51,46 @@ nav a,p {
 }
 nav a:hover {
     transition: color .5s ease;
-    color: #B3EFB2;
+    color: #1EFC1E;
 }
 
 nav .logo {
-    color: #B3EFB2;
+    color: #1EFC1E;
     font-size: 1.5em;
 }
 
 /* --------------MAIN------------ */
 
 .title-wrapper{
-    width: 80%;
-    max-width: 80%;
+    width: 70%;
+    max-width: 70%;
     margin: 2% auto;
     text-align: center;
-    background-color:#31493C;
+    background-color: #1EFC1E;
     padding: 1em;
-    color:  #001A23;
+    color:  var(--default-text-color);
     border-radius: 10px;
     
 }
 
 .title-wrapper p {
-    color:  #001A23;
+    color:  var(--default-text-color);
     font-size: 1.2em;
 }
 
 .title-container {
-    width: 50%;
-    max-width: 50%;
+    width: 70%;
+    max-width: 70%;
     margin: 2% auto;
-    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 4px 4px black;
     border-radius: 10px;
-    background-color: #E8F1F2;
+    background-color: var(--wrapper-background-color);
     padding: 1em;
 }
 
 .images-wrapper {
-    width: 80%;
-    max-width: 80%;
+    width: 90%;
+    max-width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -89,7 +98,7 @@ nav .logo {
 }
 
 .images-wrapper img {
-    width: 48%;
+    width: 49%;
     border-radius: 10px;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
 }
@@ -98,13 +107,14 @@ nav .logo {
     width: 80%;
     max-width: 80%;
     margin: 0 auto 2%;
-    background: rosybrown;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 1em;
     border-radius: 10px;
-    background-color: #31493C;
+    /* background-color: var(--container-background-color); */
+    background-color: #1EFC1E;
     
 }
 
@@ -114,11 +124,13 @@ nav .logo {
     max-height: 150px;
     padding: 5em;
     align-items: center;
-    background-color: #E8F1F2;
+    background-color: var(--wrapper-background-color);
     font-size: 2em;
-    color: #001A23;
+    color: var(--default-text-color);
     border-radius: 10px;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: black;
+    color: whitesmoke;
 }
 
 .box h3 {
@@ -129,7 +141,7 @@ nav .logo {
 footer {
     width: 100vw;
     height: 80px;
-    background-color: #001A23;
+    background-color: var(--default-background-color);
     position: relative;
 }
 
@@ -172,14 +184,14 @@ main {
 
 .introduce-wrapper h2 {
     text-align: center;
-    color: #001A23;
+    color: var(--default-background-color);
     padding: 0.5em;
     font-size: 1.8em;
 }
 
 .introduce-myself p {
     text-align: justify;
-    color: #001A23;
+    color: var(--default-background-color);
     font-size: 1.3em;
 }
 
@@ -198,7 +210,7 @@ main {
 }
 
 .introduce-myself {
-    background-color: #31493C;
+    background-color: var(--container-background-color);
     margin: 0 1%;
     border-radius: 10px;
     color: whitesmoke;
@@ -207,14 +219,14 @@ main {
 
 .introduce-myself h2,
 .introduce-myself p {
-    line-height: 3em;
+    line-height: 2.5em;
     color: whitesmoke;
 }
 
 .experiencies-wrapper {
     width: 90%;
     max-width: 90%;
-    background-color: #31493C;
+    background-color: var(--container-background-color);
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
@@ -228,7 +240,7 @@ main {
 .experience h3,
 .hobbies h3 {
     padding: .5em;
-    font-size: 1.6em;
+    font-size: 1.3em;
     color: whitesmoke;
 }
 .experiencies-wrapper ul,
@@ -248,7 +260,7 @@ main {
 .form-wrapper {
     width: 90%;
     max-width: 90%;
-    background-color: #31493C;
+    background-color: var(--container-background-color);
     margin: 2% auto;
     text-align: center;
     padding: 0.5em;
@@ -257,7 +269,7 @@ main {
 }
 
 .contact-container {
-    background-color: #E8F1F2;
+    background-color: var(--wrapper-background-color);
     width: 30%;
     max-width: 30%;
     margin: 0.5em auto;
@@ -267,7 +279,7 @@ main {
 
 .form-wrapper h2 {
     padding: 0.3em;
-    color: #001A23;;
+    color: var(--default-text-color);;
 }
 
 .fields {
@@ -315,7 +327,7 @@ textarea {
     max-width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: #31493C;
+    background-color: var(--container-background-color);
     margin: 1% auto;
     border-radius: 10px;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
@@ -388,7 +400,7 @@ nav {
     width: 100%;
     min-width: 100%;
     height: 180px;
-    background: #001A23;
+    background: var(--default-background-color);
     color: whitesmoke;
     font-size: 1.5em;
 }
@@ -413,15 +425,16 @@ nav {
     .experiencies-wrapper {
         width: 98%;
         max-width: 98%;
+        flex-direction: column;
       
     }
     .experience {
         text-align: center;
-        margin: 0 4%;
+        margin: 0 6%;
     }
     .hobbies {
         text-align: center;
-        margin: 0 4%;
+        margin: 0 6%;
     }
     .form-wrapper {
         width: 98%;
