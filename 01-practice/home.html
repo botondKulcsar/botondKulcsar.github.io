@@ -18,6 +18,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <meta property="og:title" content="Pataki Ármin oldala" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Információk és képek Pataki Árminkáról" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1511948374796-056e8f289f34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" />
     <title>Home</title>
 </head>
 
@@ -25,7 +31,7 @@
 
     <header>
         <nav>
-            <p>Home Page</p>
+            <p class="top">Home Page</p>
             <p>
                 <a href="about.html">About</a>
                 <a href="gallery.html">Gallery</a>
@@ -33,6 +39,59 @@
             </p>
         </nav>
     </header>
+    <h1>Pataki Ármin oldala</h1>
+<article class="container">
+    <p>Sziasztok! <br> Pataki Ármin vagyok, 2020.02.10-én születtem. Hajam fekete, szemem szürkéskék színű volt.
+        Csillagjegyem a vízöntő. <br> Rólam szól ez az oldal!</p>
+    
+    <figure>
+        <div class="img-wrapper">
+        <img src="./img/_DSC2293.jpg" alt="Apa és Ármin">
+    </div>
+    <figcaption>
+        <h3>Én</h3>
+    </figcaption>
+    </figure>
+    <figure>
+        <div class="img-wrapper">
+        <img src="./img/_DSC1033.jpg" alt="Apa és Ármin">
+    </div>
+    <figcaption>
+        <h3>Apával</h3>
+    </figcaption>
+    </figure>
+</article> 
+	<section class="boxes">
+        <div>Cuki vagyok</div>
+        <div>Szép vagyok</div>
+        <div>Gyors vagyok</div>
+	</section>
+<br>
+    
+		<form id="contact" name="contact">
+            <fieldset>
+               <fieldset>
+				<legend>Küldj nekem üzenetet!</legend>
+				<label for="unameli">A neved</label>
+				<input type="text" id="username" name="unameli" />
+				<label for="email">Email címed</label>
+                <input type="email" id="email" name="email" />
+              
+			</fieldset>  <br>
+                <fieldset>
+                    <legend>Üzenet:</legend>
+               <textarea></textarea>
+               </fieldset><br>
+				<button type="submit" id="send" name="send">Elküldöm</button>
+	 
+            </fieldset>
+			
+        </form>
+        
+<footer>
+    <a href="#top"> <i class="fas fa-caret-square-up"></i></a>
+   
+</footer>
 
 </body>
 
