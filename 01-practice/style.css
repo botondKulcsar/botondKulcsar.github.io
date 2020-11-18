@@ -267,12 +267,15 @@ section label {
 
 @media only screen and (max-width: 1000px) {
     main {
+        box-sizing: border-box;
         display: block;
         width: 600px;
         height: 100%;
         padding: 10px;
     }
     .main-container {
+        
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -286,22 +289,30 @@ section label {
         padding: 5px;
     }
     .main-container-home {
+        box-sizing: border-box;
         display: block;
         margin: 0 auto;
         width: 850px;
     }
     .main-background {
+        box-sizing: border-box;
         height: 100%;
         width: 100%;
     }
     .home-content {
         position: static;
+        box-sizing: border-box;
     }
     .box-container {
         display: block;
     }
     .box {
         margin: 10px auto;
+        padding: 10px;
+        overflow: hidden;
+    }
+    .box img {
+        width: 50%
     }
     .form {
 
@@ -322,6 +333,7 @@ section label {
 
 @media only screen and (max-width: 600px) {
     main {
+        box-sizing: border-box;
         width: 100%;
        
      }
