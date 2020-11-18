@@ -107,9 +107,9 @@ background: linear-gradient(90deg, rgba(48,11,77,1) 0%, rgba(10,46,71,1) 0%, rgb
 
 .works-main {
     
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 
 }
 
@@ -138,6 +138,7 @@ background: linear-gradient(90deg, rgba(48,11,77,1) 0%, rgba(10,46,71,1) 0%, rgb
 
 .title-text-works h2 {
     font-size: 1.5em;
+    padding-bottom: 2%;
 
 }
 
@@ -185,7 +186,53 @@ background: linear-gradient(90deg, rgba(48,11,77,1) 0%, rgba(10,46,71,1) 0%, rgb
     }
      
 
-/*--------------works ------------------*/
+    /*--------------works ------------------*/
+
+    .works-main {
+
+        width: 100%;
+        max-width: 100%;
+        margin: 5%;
+   
+    }
 
 
+    .pic-text-works {
+         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+   
+    }
+
+    .pic-container-works {
+        width: 40%;
+        max-width: 40%;
+    
+    
+    
+   
+    }
+
+    .title-text-works {
+        width: 55%;
+        max-width: 55%;
+        padding: 3%;
+    
+   
+    }
+
+    .title-text-works h2 {
+     font-size: 3vw;
+        padding-bottom: 2%;
+
+    }
+
+    .title-text-works p {
+        line-height: 1.7em;
+        font-size: 1.6vw;
+
+
+
+
+    }
 }
