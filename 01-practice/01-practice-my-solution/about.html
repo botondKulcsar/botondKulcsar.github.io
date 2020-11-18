@@ -1,0 +1,152 @@
+<!-- About: ezen az oldalon legyen egy hosszabb bemutatkozás, de itt is elég 5-10 mondat. 
+    Helyezz el egy nagyobb képet magadról (vagy arról akit bemutatsz) az oldal bal felső sarkában.
+    Mit csináltam eddig, mik az erősségeim, mi a hobbim, milyen nyelveket beszélek. 
+    Használd a megfelelő HTML elemeket a felsorolásokhoz, legyen benne számmal, 
+    ponttal való felsorolás is.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>About</title>
+   </head>
+
+   <body>
+      <header id="header">
+         <nav>
+            <h2>About</h2>
+            <article class="about__header--mini-portrait-image-wrapper">
+               <img
+                  src="https://images.unsplash.com/photo-1493106819501-66d381c466f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                  alt="mini portrait of me"
+                  class="about__header--mini-portrait-image"
+               />
+            </article>
+            <p>
+               <a href="home.html">Home</a>
+               <a href="gallery.html">Gallery</a>
+               <a href="works.html">Works</a>
+               <a href="about.html">About</a>
+            </p>
+         </nav>
+      </header>
+      <main>
+         <div class="about__grid-container">
+            <article class="about__portrait-wrapper">
+               <img
+                  class="about__portrait-image"
+                  src="https://images.unsplash.com/photo-1493106819501-66d381c466f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                  alt="portrait of me"
+               />
+            </article>
+            <article class="about__main-text">
+               <section class="about__introduction">
+                  <h3>About Me</h3>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna
+                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     Duis aute irure dolor in reprehenderit in voluptate velit
+                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                     occaecat cupidatat non proident, sunt in culpa qui officia
+                     deserunt mollit anim id est laborum.
+                  </p>
+               </section>
+               <section class="about__previous-works">
+                  <h4>Previous Works</h4>
+                  <ol>
+                     <li>2003-2008: - Butcher</li>
+                     <li>2008-2015: - Nanny</li>
+                     <li>2015-2020: - Pilot</li>
+                  </ol>
+               </section>
+               <section class="about__skills">
+                  <h4>Skills</h4>
+                  <ul>
+                     <li>Analytical mind</li>
+                     <li>Problem decomposition</li>
+                     <li>Getting things done</li>
+                     <li>Think before act</li>
+                  </ul>
+               </section>
+               <section class="about__hobbies">
+                  <h4>Hobbies</h4>
+                  <ul>
+                     <li>Movies from the 30s and 40s.</li>
+                     <li>World Music</li>
+                     <li>Programming Simple Games</li>
+                     <li>Forest Bathing & Walking Meditation</li>
+                  </ul>
+               </section>
+               <section class="about__languages">
+                  <h4>Language Profociency</h4>
+                  <ul>
+                     <li>Tagalog - Native</li>
+                     <li>English - Full Professional Proficiency</li>
+                     <li>German - Professional Working Proficiency</li>
+                     <li>Spanish - Elementary Proficiency</li>
+                  </ul>
+               </section>
+            </article>
+         </div>
+      </main>
+      <section class="about__message-form-container">
+         <form class="about__message-form" action="">
+            <fieldset>
+               <legend>Send a message</legend>
+
+               <div class="about__message-form-grid-container">
+                  <label for="about__message-form--first-name"
+                     >First Name:</label
+                  >
+                  <input
+                     type="text"
+                     name="about__message-form--first-name"
+                     id="about__message-form--first-name"
+                     placeholder="Hermoine"
+                     required
+                  />
+                  <label for="about__message-form--second-name"
+                     >Second Name:</label
+                  >
+                  <input
+                     type="text"
+                     name="about__message-form--second-name"
+                     id="about__message-form--second-name"
+                     placeholder="Granger"
+                     required
+                  />
+                  <label for="about__message-form--email">Email:</label>
+                  <input
+                     type="email"
+                     name="about__message-form--email"
+                     id="about__message-form--email"
+                     placeholder="hermione@potter-u.com"
+                     required
+                  />
+                  <label for="about__message-form--message">Message:</label>
+                  <textarea
+                     rows="1"
+                     cols="50"
+                     name="about__message-form--message"
+                     id="about__message-form--message"
+                     placeholder="Your message..."
+                     required
+                  >
+                  </textarea>
+                  <input type="submit" />
+               </div>
+            </fieldset>
+         </form>
+      </section>
+      <footer>
+         FOOTER
+         <div class="footer__back-to-top-container">
+            <a class="footer__back-to-top-link" href="#header">UP</a>
+         </div>
+      </footer>
+   </body>
+</html>
