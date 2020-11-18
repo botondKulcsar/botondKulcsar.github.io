@@ -9,6 +9,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>About</title>
@@ -20,7 +22,7 @@
         <nav id="nav-bar">
             <h1>About</h1>
             <p>
-                <a href="about.html">Home</a>
+                <a href="home.html">Home</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="works.html">Works</a>
             </p>
@@ -49,14 +51,52 @@
                         <li>Phasellus tempus ligula et consequat pulvinar.</li>
                         <li>In eget felis ut risus egestas varius vel eu elit.</li>
                     </ul>
-
+            
+            
+                <section class="form-main">
+                    <fieldset class="field">
+                    <legend>Üzenet küldés</legend>    
+                       <div class="form-group">
+                           <label for="name">Vezetéknév</label>
+                           <input id="name" name="name" type="text" required>
+                       </div>
+                       <div class="form-group">
+                           <label for="name2">Keresztnév</label>
+                           <input id="name2" name="name2" type="text" required>
+                       </div>
+   
+                       <div class="form-group">
+                           <label for="email">Email cím</label>
+                           <input id="email" name="email" type="email" required>
+                       </div>
+   
+           
+                       <div class="form-group">
+                            <label for="comment">Üzenet</label>
+                           <textarea id="comment" name="comment" type="text" rows=5></textarea>
+                       </div>
+                    </fieldset>
+           
+                </section>
             </article>
+
+
+           
+
+
         </section>
+
+
 
         
     </main>
 
-
+    <footer class="footer">
+        <section class="footer-link">
+            <a href="#nav-bar"> UP to the top</a>
+        </section>
+        
+    </footer>
 
 
 </body>
