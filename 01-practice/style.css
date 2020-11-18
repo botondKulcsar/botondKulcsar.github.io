@@ -1,0 +1,468 @@
+/* ---------------HOME HTML-------------------- */
+
+/* html, * { */
+    /* box-sizing: border-box; */
+}
+
+/* --------------HEADER-------------------- */
+
+header {
+    background-color: lightblue;
+}
+
+nav p {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+}
+
+nav p a {
+    margin: 5px;
+}
+
+/* ---------------MAIN------------------------ */
+
+body {
+    background: linear-gradient(to right, #00467F, #A5CC82);
+}
+
+h1 {
+    background: linear-gradient(to bottom,#114357, #F29492 );
+    width: 750px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 22px;
+}
+
+main section img {
+    width: 45%;
+    height: 500px;
+    margin: 5px;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+main article .wrapper-box {
+    width: 96%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+main article .box {
+    width: 200px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 20px 0 20px 0;
+    line-height: 150px;
+    display: flex;
+    background: rgb(93, 93, 206);
+    color: white;
+    font-size: 2em;
+    justify-content: center;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ---------------FOOTER---------------------- */
+
+fieldset {
+    width: 30%;
+    margin: 10px auto;
+    align-items: center;
+    border-radius: 8px;
+    background: rgb(176, 219, 218);
+}
+
+fieldset button {
+    display: block;
+}
+
+#myBtn {
+    display: flex;
+    justify-content: flex-end;
+    /* bottom: 10px; 
+    left: 30px; 
+    z-index: 99;  */
+    border: 1px solid black;
+    outline: none;
+    background-color: rgb(209, 182, 216);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+
+
+/* --------------GALLERY HTML----------------- */
+
+/* ------------------------------------------------ */
+
+/* section {
+    width: 100%;
+} */
+
+ .img-boxes { 
+    
+    margin: 10px auto;
+    background: linear-gradient(to right, #00467F, #A5CC82);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: auto; */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+ } 
+
+.box1 {
+    display: grid;
+    grid-area: 1 / 1 / 2 / 13;
+}
+
+.box2 {
+    display: grid;
+    grid-area: 2 / 1 / 3 / 13;
+}
+
+.box3 {
+    display: grid;
+    grid-area: 3 / 1 / 4 / 13;
+}
+.box4 {
+    display: grid;
+    grid-area: 4 / 1 / 5 / 13;
+}
+.box5 {
+    display: grid;
+    grid-area: 5 / 1 / 6 / 13;
+}
+.box6 {
+    display: grid;
+    grid-area: 6 / 1 / 7 / 13;
+}
+.box7 {
+    display: grid;
+    grid-area: 7 / 1 / 8 / 13;
+}
+.box8 {
+    display: grid;
+    grid-area: 8 / 1 / 9 / 13;
+}
+.box9 {
+    display: grid;
+    grid-area: 9 / 1 / 10 / 13;
+}
+.box10 {
+    display: grid;
+    grid-area: 10 / 1 / 11 / 13;
+}
+.box11 {
+    display: grid;
+    grid-area: 11 / 1 / 12 / 13;
+}
+.box12 {
+    display: grid;
+    grid-area: 12 / 1 / 13 / 13;
+}
+.box13 {
+    display: grid;
+    grid-area: 13 / 1 / 14 / 13;
+}
+.box14 {
+    display: grid;
+    grid-area: 15 / 1 / 16 / 13;
+}
+.box15 {
+    display: grid;
+    grid-area: 16 / 1 / 17 / 13;
+}
+.box16 {
+    display: grid;
+    grid-area: 17 / 1 / 18 / 13;
+}
+.box17 {
+    display: grid;
+    grid-area: 18 / 1 / 19 / 13;
+}
+.box18 {
+    display: grid;
+    grid-area: 19 / 1 / 20 / 13;
+}
+.box19 {
+    display: grid;
+    grid-area: 20 / 1 / 21 / 13;
+}
+.box20 {
+    display: grid;
+    grid-area: 21 / 1 / 22 / 13;
+}
+.box21 {
+    display: grid;
+    grid-area: 22 / 1 / 23 / 13;
+}
+
+
+
+main .image-boxes img {
+
+    width: 500px;   
+    background:lightgrey;
+    /* padding: 10px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+    .img {
+
+        width: 33%;        
+    }
+
+
+    .box1 {
+        display: grid;
+        grid-area: 1 / 1 / 2 / 5 ;
+    }
+    
+    .box2 {
+        display: grid;
+        grid-area: 1 / 5 / 2 / 9;
+    }
+    
+    .box3 {
+        display: grid;
+        grid-area: 1 / 9 / 2 / 13;
+    }
+    .box4 {
+        display: grid;
+        grid-area: 2 / 1 / 3 / 5;
+    }
+    .box5 {
+        display: grid;
+        grid-area:  2 / 5 / 3 / 9;
+    }
+    .box6 {
+        display: grid;
+        grid-area: 2 / 9 / 3 / 13;
+    }
+    .box7 {
+        display: grid;
+        grid-area: 3 / 1 / 4 / 5;
+    }
+    .box8 {
+        display: grid;
+        grid-area: 3 / 5 / 4 / 9;
+    }
+    .box9 {
+        display: grid;
+        grid-area: 3 / 9 / 4 / 13;
+    }
+    .box10 {
+        display: grid;
+        grid-area: 4 / 1 / 5 / 5;
+    }
+    .box11 {
+        display: grid;
+        grid-area: 4 / 5 / 5 / 9;
+    }
+    .box12 {
+        display: grid;
+        grid-area: 4 / 9 / 5 / 13;
+    }
+    .box13 {
+        display: grid;
+        grid-area: 5 / 1 / 6 / 5;
+    }
+    .box14 {
+        display: grid;
+        grid-area: 5 / 5 / 6 / 9;
+    }
+    .box15 {
+        display: grid;
+        grid-area: 5 / 9 / 6 / 13;
+    }
+    .box16 {
+        display: grid;
+        grid-area: 6 / 1 / 7 / 5;
+    }
+    .box17 {
+        display: grid;
+        grid-area: 6 / 5 / 7 / 9;
+    }
+    .box18 {
+        display: grid;
+        grid-area: 6 / 9 / 7 / 13;
+    }
+    .box19 {
+        display: grid;
+        grid-area: 7 / 1 / 8 / 5;
+    }
+    .box20 {
+        display: grid;
+        grid-area: 7 / 5 / 8 / 9;
+    }
+    .box21 {
+        display: grid;
+        grid-area: 7 / 9 / 8 / 13;
+    }
+    
+
+
+
+
+    
+}
+
+
+
+
+/* --------------ABOUT HTML--------------------- */
+/* ------------------------------------------------ */
+
+/* -- Colours palette --
+#E63946  : red
+#F1FAEE  : whiteblue
+#A8DADC  : lightblue
+#457B9D  : mediumblue
+#1D3557  : darkblue
+*/
+
+/* ------------- GLOBAL STYLE -------------- */
+
+/* @font-face {
+    font-family: 'Piazzola';
+    src: url("../font/Piazzolla-VariableFont_opsz\,wght.ttf"),
+    url("../font/Piazzolla-Italic-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url("../font/SourceSansPro-Regular.ttf"),
+    url("../font/SourceSansPro-Italic.ttf"),
+    url("../font/SourceSansPro-LightItalic.ttf");
+} */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    
+    margin: 0;
+}
+
+h1, h2 {
+    
+    font-weight: 400;
+}
+
+h1 {
+
+}
+h2 {
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.content-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    overflow: hidden;
+}
+
+* ----------- HEADER AND FOOTER STYLE -------------- */
+header, footer {
+    background-color: #1D3557;
+    color: #A8DADC;
+}
+/* ----- HEADER ------------ */
+
+header {
+    text-align: center;
+}
+
+
+header h1, header h2 {
+    color: #F1FAEE;
+    font-style: italic;
+    margin: 0;
+}
+
+.left-col {
+    max-width: 30%;
+    width: 200px;
+    float: left;
+    /* border: 2px solid grey; */
+}
+.right-col {
+    max-width: 68%;
+    float: left;
+    padding-left: 3%;
+    /* border: 2px solid grey; */
+
+}
+
+.profile-img {
+    border-radius: 50%;
+    max-width: 90%;
+}
+
+
+h1 {
+    font-size: 40px;
+}
+/* ----- FOOTER -------------- */
+
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+.contact-links a {
+    padding: 10px;
+    display: inline-block;
+}
+
+/* --------------- WORK EXPERIENCE ------------------- */
+.work {
+    background:#A8DADC;
+   
+}
+
+/* --------------- EDUCATION STYLE ------------------- */
+.education {
+    background: #457B9D;
+}
+
