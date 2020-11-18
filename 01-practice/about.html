@@ -16,7 +16,7 @@
 
 <body>
 
-    <header>
+    <header id="home">
         <nav>
             <p>About</p>
             <p>
@@ -26,7 +26,61 @@
             </p>
         </nav>
     </header>
+    <section class="my-intro">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1565437443680-dadc16fb6907?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="kép rólam">
+        </div>
+        <div class="about-text">
+            <h1>Rólam</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            <p><em>If you are going to use a passage of Lorem Ipsum</em>, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+            <p><b>If you are going to use a passage of Lorem Ipsum</b>, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+        </div>
+    </section>
+    
+    <article class="about-me">
+        <div class="list-one">
+            <h2>Tapasztalatok</h2>
+            <ul>
+                <li>Tapasztat 1.</li>
+                <li>Tapasztat 2.</li>
+                <li>Tapasztat 3.</li>
+                <li>Tapasztat 4.</li>
+            </ul>            
+        </div>
+        <div class="list-two">
+            <h2>Erősségeim</h2>
+            <ol>
+                <li>Erősség 1.</li>
+                <li>Erősség 2.</li>
+                <li>Erősség 3.</li>
+                <li>Erősség 4.</li>
+                <li>Erősség 5.</li>
+            </ol>
+            
+        </div>
 
+
+    </article>
+
+
+    <form action="message">
+        <label for="name">Név</label>
+        <input type="text" name="name">
+        <label for="email">E-mail cím</label>
+        <input type="email" name="email">
+        <label for="message">Üzenet</label>
+        <input type="textarea" name="message">
+        <button>Küldés</button>
+        
+    </form>
+
+    <footer>
+        <button>
+            <a href="#home">&#8593</a>
+            </button>
+
+    </footer>
 </body>
 
 </html>

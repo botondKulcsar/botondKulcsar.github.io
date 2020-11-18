@@ -1,0 +1,254 @@
+/*--------- Home ----------*/
+
+*, html {
+    box-sizing: border-box;
+}
+*, *::after, ::before {
+    box-sizing: inherit;
+} 
+
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.image-container img {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    border: 2px solid lightblue;
+    padding: 2px 2px 2px 2px;
+
+}
+.box-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.box-container>div {
+    background: lightblue;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin: 10px 5px;
+    padding-top: 3px;
+
+}
+form {
+    background: grey;
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+label {
+    padding-top: 15px;
+}
+input {
+    display: block;
+    width: 90%;
+}
+
+input[type="textarea"]{
+    height: 100px;
+}
+
+form button {
+    width: 60px;
+    background: lightblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: lightgrey;
+    height: 100px;
+    }
+
+footer button {
+    font-size: 1.7em;
+    font-weight: 900;
+    color: lightblue;
+    background: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid lightblue;
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+@media only screen and (min-width: 650px) {
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box-container {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-around; 
+    }
+    input {
+        display: block;
+        width: 50%;
+    }
+}
+
+/* ----------Works page----- */
+
+.work-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: lightblue;
+    justify-items: center;
+    padding-top: 20px;
+}
+.work-main>section {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.5);
+    background: whitesmoke;
+    width: 85%;
+           
+}
+
+.work-image {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid lightblue;
+    padding: 2px 2px 2px 2px;
+
+}
+
+.textholder {
+    padding-left: 15px;
+}
+
+@media only screen and (min-width: 650px) {
+    .work-main>section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 25px;
+    }
+
+
+}
+
+/* ----------- Gallery page ---------- */
+
+.gallery-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background: lightblue;
+    padding-top: 20px;
+    gap: 15px;
+}
+.gallery-img {
+    background: whitesmoke;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.gallery-img img{
+    width: 90%;
+}
+
+@media only screen and (min-width: 650px) {
+    .gallery-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-self: center;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 25px;
+    }
+    .gallery-img {
+        background: whitesmoke;
+        width: 90%;
+    
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+
+}
+
+/* ----------About page---------- */
+
+.my-intro {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.about-image img {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    border: 2px solid lightblue;
+    padding: 2px 2px 2px 2px;
+}
+
+.about-me {
+    background: lightblue;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+.about-me>div {
+    background: rgba(255, 255, 255, 0.75);
+    width: 100%;
+
+    
+}
+
+@media only screen and (min-width: 650px) {
+.my-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about-me {
+    background: lightblue;
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+}
+
+/* ----------- Header ------------ */
+
+header {
+    background: lightgrey;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px 5px 5px 5px;
+}
+
+nav p{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+nav a {
+    background:lightblue;
+    margin-left: 15px;
+    padding: 8px 8px 8px 8px;
+    border-radius: 8px;
+
+}
