@@ -1,0 +1,80 @@
+html, *{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+/************************************** Header ******************************************/
+header{
+    background:url(https://media.istockphoto.com/photos/broken-hand-with-copy-space-picture-id172339941?k=6&m=172339941&s=612x612&w=0&h=LBJQkIMhZ-Ohie-yV-Jp3REJK8qOck5kAo3hkta4bvA=);
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    line-height: 150px;
+    padding-left: 20px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+nav a:not(:last-child)::after{
+    content:' /';
+}
+
+/*************************************** Main ******************************************/
+.main_section_top{
+    padding-left: 20px;
+}
+.main_section_img{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3px;
+}
+.main_section_img img{
+    width: 90%;
+    margin: 5%;
+    padding: 1px;
+    max-height:300px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.7);
+}
+article{
+    width: 90%;
+    margin: 2% auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+article div{
+    margin: 5%;
+}
+.urlap{
+    width: 80%;
+    margin: 2% auto;
+    text-align: center;
+    background:linear-gradient(0deg,#c4c2bd,#e1ecef);
+}
+.urlap div{
+    margin: 2% auto;
+}
+/*********************************** Footer *******************************************/
+footer{
+    width: 100%;
+    height: 100px;
+    background:linear-gradient(#c4c2bd,#e1ecef);
+}
+footer img{
+    width: 50px; 
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+}

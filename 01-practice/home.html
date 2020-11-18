@@ -18,21 +18,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Gipsz Jakab, a magyar John Doe</title>
+    <script>
+        function validateForm() {
+            let x = document.forms["Form1"]["nev"].value;
+            if (x == "") {
+                alert("A név mező üres!");
+                return false;
+            }
+            let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            let z = document.forms["Form1"]["email"].value;
+            if(!email.value.match(mailformat))
+            {
+                alert("Hibás e-mail cím!");
+                return false;
+            }
+            let y = document.forms["Form1"]["uzenet"].value;
+            if (y == "") {
+                alert("Az üzenet mező üres!");
+                return false;
+            }
+        }
+    </script>
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <p>Home Page</p>
-            <p>
-                <a href="about.html">About</a>
-                <a href="gallery.html">Gallery</a>
+        <section>
+            <nav>
+                <a id="top" href="home.html">Home</a>
                 <a href="works.html">Works</a>
-            </p>
-        </nav>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+
+            </nav>
+        </section>
     </header>
+    <main>
+        <section class="main_section_top">
+            <h1>Gipsz Jakab, a magyar John Doe</h1>
+            <p>Gipsz Jakab, a magyar John Doe (esetleg Kilroy), a nagy ismeretlen, akit mindenki ismer, de senki sem
+                ismer igazán.
+                Régebben Gipsz Jakab egy Kovács János volt. Még régebben: egy egyszeri ember. Ismeretlen katona.</p>
+        </section>
+        <section class="main_section_img">
+            <img src="./img/gipszes.jpg" alt="Először gipszben">
+            <img src="./img/michelin_doll.jpg" alt="Az első munka">
+        </section>
+        <section>
+            <article>
+                <div>
+                    <h3>Gipsz Jakab az átlag / mintapolgár</h3>
+                    <p>Jakab a gyakorlatilag állandó gipszkötés miatt a médiákok, a KSH, és az oktatás kedvencévé vált,
+                        mert arcvonásai nem voltak felismerhetők.</p>
+                </div>
+                <div>
+                    <h3>Gipsz Jakab politikai pályafutása
+                    </h3>
+                    <p>Gipsz Jakab valamilyen úton-módon a Kistarcsa-kerepesi Autonóm Köztársaság miniszterelnöke, helyi
+                        szóval tarcsokratája lett.</p>
+                </div>
+                <div>
+                    <h3>A jakobinusok</h3>
+                    <p>A jakobinusok egy magyar ilyen-olyan mozgalom volt a történelem homályában. Nevét az alapító
+                        atya, Martinovics (Gipsz) Jakab után kapta, aki egy elterjedt pletyka szerint háromperhármas
+                        ügynök lehetett. Ez nem igaz, mint azt egy neve helyét vastag filctollal fedő irat is tanúsítja.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="urlap">
+            <form name="Form1" action="" onsubmit="return validateForm()" method="post">
+                <div>
+                    <fieldset>
+                        <legend>Üzenet küldése</legend>
+                        <div>
+                            <label for="nev">Név:</label>
+                            <input type="text" name="nev" id="nev">
+                        </div>
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="uzenet">Üzenet:</label>
+                            <textarea cols="100" rows="20" name="uzenet" id="uzenet"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Küldés">
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href=#top><img src="./img/top.svg" alt="top" id="top_button"></a>
+    </footer>
 
 </body>
 
