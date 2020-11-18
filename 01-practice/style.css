@@ -1,0 +1,164 @@
+:root {
+    --lightblue: #D1CCDC;
+    --darkblue: #424C55;
+
+    --lightcolor: #F5EDF0;
+
+    --lightbrown: #886F68;
+    --darkbrown: #3D2C2E;
+}
+
+html, * {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+/********** ALL SITE: Header, Footer **********/
+header {
+    width: 100%;
+    min-height: 60px;
+
+    background: var(--darkblue);
+    color: var(--lightcolor);
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-bar p {
+    width: 30%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: var(--lightcolor);
+}
+
+main {
+    background: var(--lightcolor);
+    padding: 1%;
+}
+
+footer {
+    width: 100%;
+    min-height: 60px;
+    text-align: center;
+
+    background: var(--darkblue);
+    color: var(--lightcolor);
+    position: relative;
+}
+
+#footer-nav {
+    position: absolute;
+    left: 10px;
+    bottom: 50%;
+    transform: translate(0, 50%)
+}
+
+#footer-nav i {
+    background: var(--lightblue);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+footer p {
+    margin: 0;
+    padding: 5%;
+}
+
+/********** HOME **********/
+h1 {
+    margin-top: 0;
+    padding-top: 20px;
+    color: var(--darkblue);
+}
+
+h2 {
+    color: var(--darkblue);
+}
+
+.image--right {
+    float: right;
+    filter: grayscale(80%);
+}
+
+.image--right img {
+    width: 200px;
+}
+
+.image--center {
+    width: 100%;
+}
+
+.image--center img {
+    width: 100%;
+}
+
+.home-boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    padding: 3%;
+    margin: 1%;
+    text-align: center;
+    background: var(--lightbrown);
+}
+
+
+
+/********** WORKS **********/
+
+/********** GALLERY **********/
+ 
+.img-container {
+    width: 30%;
+}
+
+.img-container img {
+    width: 100%;
+}
+/********** ABOUT **********/
+
+/********** Media Query **********/
+@media only screen and (min-width: 650px) {
+    .home-boxes {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 2% auto;
+    }
+    
+    .box {
+        padding: 3% 10%;
+        margin: 1%;
+        text-align: center;
+        background: var(--lightbrown);
+    }
+}
+/********** HOME **********/
+
+/********** WORKS **********/
+
+/********** GALLERY **********/
+
+/********** ABOUT **********/
