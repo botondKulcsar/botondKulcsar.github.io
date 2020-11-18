@@ -82,7 +82,7 @@ footer {
 
 footer p {
     margin: 0;
-    padding: 5%;
+    padding: 2%;
 }
 
 /********** HOME **********/
@@ -128,20 +128,58 @@ h2 {
 
 
 /********** WORKS **********/
+.work-main article {
+    width: 100%;
+    padding: 1px;
+}
+
+.work-main article img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.work-main article p {
+    width: 100%;
+    text-align: justify;
+}
+
+.work-links p:first-child {
+    color: var(--darkblue);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.work-links a {
+    color: var(--darkblue);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
 
 /********** GALLERY **********/
- 
+.gallery-main {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(150, auto);
+ }
+
 .img-container {
-    width: 30%;
+    grid-column: 1 / 4;
 }
 
 .img-container img {
     width: 100%;
+    margin: 1%;
+    box-shadow: 1px 3px 5px black;
 }
 /********** ABOUT **********/
 
 /********** Media Query **********/
 @media only screen and (min-width: 650px) {
+    /********** HOME **********/
     .home-boxes {
         flex-direction: row;
         justify-content: space-evenly;
@@ -154,7 +192,50 @@ h2 {
         text-align: center;
         background: var(--lightbrown);
     }
+
+    /********** WORKS **********/
+    .work-main article {
+        display: flex;
+        padding: 2%;
+    }
+
+    .work--right {
+        flex-direction: row-reverse;
+    }
+    
+    .work-main article img {
+        display: block;
+        width: 35%;
+    }
+
+    .work--left img {
+        padding-right: 2%;
+    }
+
+    .work--right img {    
+        padding-left: 2%;
+    }
+    
+    .work-links {
+        padding: 2%;
+    }
+    
+
+    /********** GALLERY **********/
+    .img-container {
+        grid-column: auto;
+        gap: 5px;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: 150px;
+        margin: 2%;;
+    }
+    /********** ABOUT **********/
 }
+
+
 /********** HOME **********/
 
 /********** WORKS **********/
