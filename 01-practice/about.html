@@ -1,8 +1,13 @@
-<!-- About: ezen az oldalon legyen egy hosszabb bemutatkozás, de itt is elég 5-10 mondat. 
+<!--About: ezen az oldalon legyen egy hosszabb bemutatkozás, de itt is elég 5-10 mondat. 
     Helyezz el egy nagyobb képet magadról (vagy arról akit bemutatsz) az oldal bal felső sarkában.
     Mit csináltam eddig, mik az erősségeim, mi a hobbim, milyen nyelveket beszélek. 
     Használd a megfelelő HTML elemeket a felsorolásokhoz, legyen benne számmal, 
     ponttal való felsorolás is.  -->
+<!-- Az oldal alján legyen egy űrlap, amin keresztül üzenetet tudnak neked küldeni. 
+    Az adatokat ellenőrizni is kell, az alábbiak szerint:
+    Név 
+    Email (valid email címnek kell lennie).
+    Üzenet  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,15 +23,65 @@
 
     <header>
         <nav>
-            <p>About</p>
-            <p>
-                <a href="home.html">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="works.html">Works</a>
-            </p>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="works.html">Works</a>
+                </li>
+            </ul>
+            <h2 id="about-page">About Me</h2>
         </nav>
     </header>
-
+    <main class="main-about">
+        <article>
+            <section>
+                <img class="my-picture"
+                    src="https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="Farkas Zoé fényképe">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <ul>
+                    <li>Erősség</li>
+                    <li>Erősség</li>
+                    <li>Erősség</li>
+                </ul>
+            </section>
+        </article>
+        <form>
+            <fieldset>
+                <legend>Lépj velem kapcsoltba!</legend>
+                <label for="name">Név</label>
+                <input type="text" name="name" id="name">
+                <label for="email">e-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Ide írd, amit meg szeretnél velem osztani."></textarea>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </main>
+    <footer class="blue">
+        <ul>
+            <li>
+                <button><a href="#about-page">Vissza az oldal elejére</a></button>
+            </li>
+            <li>
+                <p>&copy; 2020 Farkas Zoé</p>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>

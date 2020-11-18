@@ -1,0 +1,202 @@
+/*----------------- Colors --------------------------*/
+
+.blue{
+    background: blue;
+}
+
+.yellow    {
+    background: yellow;
+}
+ .green   {
+    background: green;
+}
+.red    {
+    background: red;
+}
+.purple    {
+    background: purple;
+}
+
+body {
+    margin: 0 auto;
+}
+
+html, * {
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: initial;
+}
+
+/*-------------------- Nav bar / Footer -----------------------*/
+
+header, footer {
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+header {
+    background-image: url(https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header li, footer li {
+    padding: 0rem 1rem 1rem 1rem;
+    list-style: none;
+    display: inline-block;
+}
+
+header a, footer a {
+    text-decoration: none;    
+}
+
+nav {
+    margin: 0 auto;
+    padding: 5px;
+    width: 50%;
+}
+
+nav ul {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+/*-------------------- Home page ---------------------*/
+
+h1 {
+    text-align: center;
+}
+
+.img-wrapper-home {
+    padding: 1rem;
+}
+
+aside img {
+    width: 35rem;
+    height: 25rem;
+    object-fit: cover;
+    object-position: bottom;    
+}
+
+.introduction {
+    flex-basis: 50%;
+    padding: 3rem 6rem;
+    text-align: justify;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.assets {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem
+}
+
+/*-------------------- Gallery ------------------------*/
+
+.img-wrapper-gallery img{
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/*----------------------- About ---------------------------*/
+
+.my-picture {
+    margin-right: 1rem;
+    width: 30%;
+    float: left;
+}
+
+.my-picture ~ p {
+    text-align: justify;
+}
+
+.my-picture ~ ul {
+    float: left;
+}
+
+.my-picture ~ ul li {
+    width: 5rem;
+    list-style: decimal;
+}
+
+article::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.main-about {
+    margin: 0 2rem 3rem 2rem;
+}
+
+.main-about form {
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: initial;
+    width: 30%;
+}
+
+.main-about form *{
+    display: block;
+    padding: 5px;
+}
+
+/*---------------------- Works ----------------------------*/
+
+.main-works {
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+.works-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.works-container p {
+    text-align: justify;
+}
+
+.img-wrapper-works {       
+    margin: 1rem;
+}
+
+.img-wrapper-works img{
+    width: 100%;
+    max-height: 28rem;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.main-works:first-child {
+    flex-basis: 50%;
+}
+
+/*---------------------- Desktop --------------------------*/
+
+@media only screen and ( min-width: 1000px ) {
+
+    .main-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 4px;
+    }
+
+    .works-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

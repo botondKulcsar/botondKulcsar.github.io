@@ -5,11 +5,7 @@
     a bemutatkozó egy-egy jó tulajdonságát.
     A láblécben legyen egy gomb, ami kattintásra visszavisz az oldal tetejére. -->
 
-<!-- Az oldal alján legyen egy űrlap, amin keresztül üzenetet tudnak neked küldeni. 
-    Az adatokat ellenőrizni is kell, az alábbiak szerint:
-    Név 
-    Email (valid email címnek kell lennie).
-    Üzenet  -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,14 +21,71 @@
 
     <header>
         <nav>
-            <p>Home Page</p>
-            <p>
-                <a href="about.html">About</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="works.html">Works</a>
-            </p>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="works.html">Works</a>
+                </li>
+            </ul>
+            <h3 id="home-page">Home page</h3>
         </nav>
     </header>
+    <main>
+        <h1>Lenyűgöző természetfotók Európából</h1>
+        <article>
+            <section class="introduction">
+                <h2>Üdvözözöllek a holapomon, ahol lehetséged nyílik betekinteni az európai vadonba.</h2>
+                <p><strong>Farkas Zoé</strong> vagyok, mesterségem címere természetfotós. Már gyermekkoromban is
+                    magával ragadott a természet szépsége, így nem is volt kérdés, hogy felnőttként ezt az életutat
+                    választom.
+                    A miszzióm, hogy közelebb hozzam az embereket a természethez így mélyebben elköteleződhetnek
+                    ezen csodák megóvása mellett.</p>
+                <p></p>
+            </section>
+            <aside>
+                <div class="img-wrapper-home">
+                    <img src="https://images.unsplash.com/photo-1465966670031-e4ea86442ed5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+                        alt="Női kéz">
+                </div>
+                <div class="img-wrapper-home">
+                    <img src="https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        alt="Farkas Zoé fényképe">
+                </div>
+            </aside>
+            <section class="assets">
+                <div>
+                    <h4>Láthatatlan</h4>
+                    <p>Munkáim során teljesen észrevétlen maradok a vadon élő állatok számára, így érem el hogy a képeim az igaz valóságot mutatják. A természet igazi arcát mindenféle emberi bevatkozás nélkül. </p>
+                </div>
+                <div>
+                    <h4>Elköztelezett</h4>
+                    <p>Hiszek annak fontosságában, hogy minél közelebb tudjuk hozni a természett az emberekhez, annál elhivatottabbak lesznek a környevetvédelem mellett.</p>
+                </div>
+                <div>
+                    <h4>Kitartó</h4>
+                    <p>A legizgalmasabb pillanatokért hoszzú órákat akár több napot is türelemmel kell várnom van, hogy mozdulatlanul. Ez igazán megterhelő, de ezekből születnek a legjobb képek.</p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <button><a href="#home-page">Vissza az oldal elejére</a></button>
+            </li>
+            <li>
+                <p>&copy; 2020 Farkas Zoé</p>
+            </li>
+        </ul>
+    </footer>
 
 </body>
 
